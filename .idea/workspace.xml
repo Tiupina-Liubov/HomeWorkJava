@@ -5,14 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17f8eb11-fc68-4c9b-9134-206093b180f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/taski1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/Metods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task1/Task1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task10/Task10.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task11/Task11.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task12/Task12.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task13/Task13.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task14/Task14.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task2/Task2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task3/Task3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task4/Task4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task5/Task5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task6/task6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task7/task7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task8/Task8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task9/task9.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/Metod.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HomeWorkJava/homeWork27_11_23/Metod.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,7 +50,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "/Users/luibovtuipina/Desktop/Ucoba/HomeWorkJava/HomeWorkJava/src/homeWork27_11_23",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
@@ -46,9 +71,22 @@
       <recent name="$PROJECT_DIR$/HomeWorkJava" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Metod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeWork27_11_23.Metod" />
+  <component name="RunManager" selected="Application.Task14">
+    <configuration name="Task14" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeWork27_11_23.task14.Task14" />
+      <module name="HomeWorkJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="homeWork27_11_23.task14.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homeWork27_11_23.Test" />
       <module name="HomeWorkJava" />
       <extension name="coverage">
         <pattern>
@@ -62,7 +100,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Metod" />
+        <item itemvalue="Application.Task14" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
   </component>
@@ -76,5 +115,16 @@
       <updated>1701542126341</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/Test.java</url>
+          <line>173</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
