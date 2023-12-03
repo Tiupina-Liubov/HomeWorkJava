@@ -5,10 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17f8eb11-fc68-4c9b-9134-206093b180f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/taski.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task14/Task14.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task14/Task14.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HomeWorkJava/homeWork27_11_23/task14/Task14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HomeWorkJava/homeWork27_11_23/task14/Task14.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/BookStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Borrowable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/CollectionProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Genre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/ItemCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Librarian.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/LibraryCatalogue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/LibraryItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Magazine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Maintainable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Searchable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/Metods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/Test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -115,16 +129,5 @@
       <updated>1701542126341</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/Test.java</url>
-          <line>173</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
