@@ -19,15 +19,16 @@ public class Task11 {
         stringList.add("mango");
         stringList.add("mango");
         System.out.println(stringList);
-        List<String> firstElement=firstUniqueElements(stringList);
+        List<String> firstElement = firstUniqueElements(stringList);
         System.out.println(firstElement);
     }
-    public static List<String> firstUniqueElements(List<String> stringList){
-        List<String> listFirstUniqueElements=new ArrayList<>();
-        for(String str: stringList){
-            if(!listFirstUniqueElements.contains(str)){
+
+    public static List<String> firstUniqueElements(List<String> stringList) {
+        List<String> listFirstUniqueElements = new ArrayList<>();
+        for (String str : stringList) {
+            if (!listFirstUniqueElements.contains(str)) {
                 listFirstUniqueElements.add(str);
-            }else {
+            } else {
                 break;
             }
         }

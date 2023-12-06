@@ -1,0 +1,40 @@
+Техническое задание для разработки системы "Умный дом" на Java
+
+1. Цель проекта:
+Разработка программного комплекса на Java для управления
+системой "Умный дом", включающего автоматизацию различных бытовых процессов и устройств.
+
+2. Описание системы:
+Создание классов SmartHome, Lighting, Heating, SecuritySystem, Device и интерфейсов ControlInterface, Security.
+Каждый класс должен содержать как минимум 4 поля различных типов.
+Использование массивов или коллекций для управления и хранения данных об устройствах и системах.
+
+3. Требования к классам и интерфейсам:
+3.1. Класс SmartHome:
+Поля: String homeName, Device[] devices, boolean isAwayMode, LocalDateTime lastUpdate.
+Методы для управления домом в целом.
+
+3.2. Класс Lighting:
+Наследуется от Device.
+Дополнительные поля: int brightnessLevel, String colorTemperature.
+Методы для управления освещением.
+
+3.3. Класс Heating:
+Наследуется от Device.
+Дополнительные поля: double currentTemperature, double targetTemperature.
+Методы для управления отоплением.
+
+3.4. Класс SecuritySystem:
+Наследуется от Device.
+Дополнительные поля: boolean isArmed, String[] accessCodes.
+Реализация специфических функций безопасности.
+
+3.5. Абстрактный класс Device:
+Поля: String deviceId, String location, boolean isOn, LocalDateTime lastChecked.
+Абстрактные методы для базовых операций устройства.
+
+3.6. Интерфейс ControlInterface:
+Методы для общего управления устройствами: turnOn(), turnOff(), getStatus().
+
+3.7. Интерфейс Security:
+Методы для функций безопасности: armSystem(String code), disarmSystem(String code).

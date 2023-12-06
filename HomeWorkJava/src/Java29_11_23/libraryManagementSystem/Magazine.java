@@ -3,15 +3,25 @@ package Java29_11_23.libraryManagementSystem;
 import java.time.LocalDate;
 
 public class Magazine extends LibraryItem {
-    int issueNumber;
-    LocalDate releaseDate;
-    boolean isMonthly;
+   private int issueNumber;
+   private LocalDate releaseDate;
+   private boolean isMonthly;
+   private BookStatus status;
 
-    public Magazine(String title, String author, Genre genre, int issueNumber, LocalDate releaseDate, boolean isMonthly) {
+    public Magazine(String title, String author, Genre genre, int issueNumber, LocalDate releaseDate, boolean isMonthly,BookStatus status) {
         super(title, author, genre);
         this.issueNumber = issueNumber;
         this.releaseDate = releaseDate;
         this.isMonthly = isMonthly;
+        this.status=status;
+    }
+
+    public BookStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(BookStatus status) {
+        this.status = status;
     }
 
     public int getIssueNumber() {
