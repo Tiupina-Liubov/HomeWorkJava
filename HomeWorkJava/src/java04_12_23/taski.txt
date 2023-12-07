@@ -2,7 +2,7 @@
 
 2.HashMap<String, Integer>: Подсчитайте сумму всех значений, соответствующих ключам, начинающимся на букву 'A'.
 
-3HashMap<Integer, List<String>>: Для каждого ключа выведите все строки из соответствующего списка, которые начинаются с гласной буквы.
+3.HashMap<Integer, List<String>>: Для каждого ключа выведите все строки из соответствующего списка, которые начинаются с гласной буквы.
 
 4.HashMap<Integer, Integer>: Найдите ключ с максимальным значением и выведите эту пару.
 
@@ -16,4 +16,6 @@
 
 9.HashMap<String, String>: Определите, можно ли преобразовать HashMap в List<String>, где каждый элемент - это конкатенация ключа и значения, так, чтобы все элементы списка были уникальными.
 
-10HashMap<String, Integer> и HashMap<Integer, List<String>>: Для каждого ключа в HashMap<String, Integer> найдите соответствующие строки в HashMap<Integer, List<String>>, где ключ во втором HashMap - это значение из первого, и выведите их.
+10HashMap<String, Integer> и HashMap<Integer, List<String>>: Для каждого ключа в HashMap<String, Integer>
+ найдите соответствующие строки в HashMap<Integer, List<String>>, где ключ во втором HashMap - это значение из первого,
+  и выведите их.
