@@ -1,4 +1,4 @@
-package HomeWorkJava.src.Java06_12_23;
+package src.Java06_12_23;
 
 import java.util.Objects;
 

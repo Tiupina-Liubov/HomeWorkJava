@@ -1,6 +1,6 @@
-package HomeWorkJava.src.Java06_12_23;
+package src.Java06_12_23;
+import src.Java06_12_23.User;
 
-import HomeWorkJava.src.Java06_12_23.User;
 
 import java.util.Comparator;
 

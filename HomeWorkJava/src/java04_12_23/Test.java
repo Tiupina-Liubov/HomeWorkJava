@@ -1,4 +1,4 @@
-package java04_12_23;
+package src.java04_12_23;
 
 import javax.swing.plaf.basic.BasicListUI;
 import java.util.*;

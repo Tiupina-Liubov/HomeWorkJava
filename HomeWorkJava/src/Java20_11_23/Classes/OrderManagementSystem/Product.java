@@ -1,4 +1,4 @@
-package Java20_11_23.Classes.OrderManagementSystem;
+package src.Java20_11_23.Classes.OrderManagementSystem;
 
 public class Product extends OrderManagementSystem {
     String nameProduct;

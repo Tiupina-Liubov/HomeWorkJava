@@ -5,7 +5,91 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17f8eb11-fc68-4c9b-9134-206093b180f4" name="Changes" comment="new">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java06_12_23/HomeWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java06_12_23/HomeWork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java06_12_23/NewSortUserName.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java06_12_23/NewSortUserName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java06_12_23/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java06_12_23/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java06_12_23/taski.txt" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java06_12_23/taski.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/Library/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/Library/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/Library/Librarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/Library/Librarian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/Library/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/Library/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/Library/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/Library/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/OrderManagementSystem/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/OrderManagementSystem/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/OrderManagementSystem/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/OrderManagementSystem/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/OrderManagementSystem/OrderManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/OrderManagementSystem/OrderManagementSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/OrderManagementSystem/OrderManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/OrderManagementSystem/OrderManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/OrderManagementSystem/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/OrderManagementSystem/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/TransportFleetManagementSystem/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/TransportFleetManagementSystem/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/TransportFleetManagementSystem/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/TransportFleetManagementSystem/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/TransportFleetManagementSystem/Fleet.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/TransportFleetManagementSystem/Fleet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/TransportFleetManagementSystem/FleetManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/TransportFleetManagementSystem/FleetManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/BookStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/BookStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Borrowable.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Borrowable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/CollectionProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/CollectionProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Genre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/ItemCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/ItemCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Librarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Librarian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/LibraryCatalogue.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/LibraryCatalogue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/LibraryItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/LibraryItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Magazine.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Magazine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Maintainable.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Maintainable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Searchable.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Searchable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task1/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task1/Task1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task10/Task10.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task10/Task10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task11/Task11.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task11/Task11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task12/Task12.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task12/Task12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task13/Task13.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task13/Task13.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task14/Task14.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task14/Task14.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task2/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task2/Task2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task3/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task3/Task3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task4/Task4.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task4/Task4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task5/Task5.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task5/Task5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task6/task6.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task6/task6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task7/task7.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task7/task7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task8/Task8.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task8/Task8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task9/task9.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task9/task9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java04_12_23/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorkJava/src/java04_12_23/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/ControlStaffCompany/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/ControlStaffCompany/Department.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/ControlStaffCompany/DepartmentOperations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/ControlStaffCompany/Developer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/ControlStaffCompany/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/ControlStaffCompany/EmployeeActions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/ControlStaffCompany/HRManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/ControlStaffCompany/Manager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/ControlStaffCompany/NameDepartment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/ControlStaffCompany/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/TransportSystem/2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/TransportSystem/Bus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/TransportSystem/Maintenance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/TransportSystem/Taxi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/TransportSystem/Tram.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/TransportSystem/TransportControl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/TransportSystem/TransportManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/TransportSystem/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt1/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt1/Developer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt1/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt1/HRManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt1/Maneger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt3/3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt4/4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt4/ControlInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt4/Device.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt4/Heating.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt4/Lighting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt4/Security.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt4/SecuritySystem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt4/SmartHome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt5/5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt6/6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt7/7.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +107,10 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/Test.java" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Book.java" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -64,14 +152,14 @@
       <recent name="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/HomeWorkJava/src" />
       <recent name="$PROJECT_DIR$/HomeWorkJava/out" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/.idea" />
       <recent name="$PROJECT_DIR$/HomeWorkJava" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HomeWork">
+  <component name="RunManager" selected="Application.CollectionProcessor">
     <configuration name="CollectionProcessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java29_11_23.libraryManagementSystem.CollectionProcessor" />
       <module name="HomeWorkJava" />
@@ -100,23 +188,10 @@
     </configuration>
     <configuration name="Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homeWork27_11_23.task1.Task1" />
-      <module name="HomeWorkJava" />
+      <module name="_210823-e-be" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="homeWork27_11_23.task1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task14" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homeWork27_11_23.task14.Task14" />
-      <module name="HomeWorkJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="homeWork27_11_23.task14.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,6 +205,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="java04_12_23.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="src.Java06_12_23.HomeWork" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.Java06_12_23.HomeWork" />
+      <module name="_210823-e-be" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.Java06_12_23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,11 +240,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Task1" />
+        <item itemvalue="Application.src.Java06_12_23.HomeWork" />
         <item itemvalue="Application.HomeWork" />
         <item itemvalue="Application.java04_12_23.Test" />
         <item itemvalue="Application.CollectionProcessor" />
-        <item itemvalue="Application.Task14" />
-        <item itemvalue="Application.Task1" />
       </list>
     </recent_temporary>
   </component>

@@ -1,18 +1,18 @@
-package Java20_11_23.Classes;
+package src.Java20_11_23.Classes.Library;
 
-import Java20_11_23.Classes.Library.Book;
-import Java20_11_23.Classes.Library.Librarian;
-import Java20_11_23.Classes.Library.Library;
-import Java20_11_23.Classes.Library.Reader;
-import Java20_11_23.Classes.OrderManagementSystem.Customer;
-import Java20_11_23.Classes.OrderManagementSystem.Order;
-import Java20_11_23.Classes.OrderManagementSystem.OrderManager;
-import Java20_11_23.Classes.OrderManagementSystem.Product;
-import Java20_11_23.Classes.TransportFleetManagementSystem.Car;
-import Java20_11_23.Classes.TransportFleetManagementSystem.Driver;
-import Java20_11_23.Classes.TransportFleetManagementSystem.Fleet;
-import Java20_11_23.Classes.TransportFleetManagementSystem.FleetManager;
-import Java20_11_23.Classes.TransportFleetManagementSystem.FleetManager;
+import src.Java20_11_23.Classes.Library.Book;
+
+import src.Java20_11_23.Classes.Library.Library;
+import src.Java20_11_23.Classes.Library.Reader;
+import src.Java20_11_23.Classes.OrderManagementSystem.Customer;
+import src.Java20_11_23.Classes.OrderManagementSystem.Order;
+import src.Java20_11_23.Classes.OrderManagementSystem.OrderManager;
+import src.Java20_11_23.Classes.OrderManagementSystem.Product;
+import src.Java20_11_23.Classes.TransportFleetManagementSystem.Car;
+import src.Java20_11_23.Classes.TransportFleetManagementSystem.Driver;
+import src.Java20_11_23.Classes.TransportFleetManagementSystem.Fleet;
+import src.Java20_11_23.Classes.TransportFleetManagementSystem.FleetManager;
+import src.Java20_11_23.Classes.TransportFleetManagementSystem.FleetManager;
 
 import java.util.Arrays;
 
@@ -67,7 +67,7 @@ public class Test {
 //        Библиотека (Library)
 //        Поля: название, адрес, список библиотекарей (массив).
 //        Методы: добавить библиотекаря, найти библиотекаря по имени.
-        Librarian[] librarians = {librarian, librarian1, librarian2, librarian3, null, null};
+        Library[] librarians = {librarian, librarian1, librarian2, librarian3, null, null};
         String name = "Tiupina Liubov";
         System.out.println(Library.findALibrarianByName(librarians, name));
         Librarian librarian4 = new Librarian("Pupkin Sascha", 5);

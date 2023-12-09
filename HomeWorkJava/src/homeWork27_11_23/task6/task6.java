@@ -1,4 +1,4 @@
-package homeWork27_11_23.task6;
+package src.homeWork27_11_23.task6;
 
 import java.util.ArrayList;
 import java.util.List;
