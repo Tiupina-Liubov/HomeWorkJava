@@ -4,186 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17f8eb11-fc68-4c9b-9134-206093b180f4" name="Changes" comment="">
+    <list default="true" id="17f8eb11-fc68-4c9b-9134-206093b180f4" name="Changes" comment="new">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/Library/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/Library/Librarian.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/Library/Library.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/Library/Reader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/OrderManagementSystem/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/OrderManagementSystem/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/OrderManagementSystem/OrderManagementSystem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/OrderManagementSystem/OrderManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/OrderManagementSystem/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/TransportFleetManagementSystem/Car.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/TransportFleetManagementSystem/Driver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/TransportFleetManagementSystem/Fleet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java20_11_23/Classes/TransportFleetManagementSystem/FleetManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/BookStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Borrowable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/CollectionProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Genre.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/ItemCondition.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Librarian.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/LibraryCatalogue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/LibraryItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Magazine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Maintainable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Searchable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/libraryManagementSystem/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Java29_11_23/taski.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task1/Task1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task10/Task10.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task11/Task11.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task12/Task12.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task13/Task13.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task14/Task14.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task2/Task2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task3/Task3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task4/Task4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task5/Task5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task6/task6.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task7/task7.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task8/Task8.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/task9/task9.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/homeWork27_11_23/taski1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java04_12_23/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java04_12_23/taski.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/ControlStaffCompany/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/ControlStaffCompany/Department.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/ControlStaffCompany/DepartmentOperations.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/ControlStaffCompany/Developer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/ControlStaffCompany/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/ControlStaffCompany/EmployeeActions.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/ControlStaffCompany/HRManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/ControlStaffCompany/Manager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/ControlStaffCompany/NameDepartment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/ControlStaffCompany/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/TransportSystem/2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/TransportSystem/Bus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/TransportSystem/Maintenance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/TransportSystem/Taxi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/TransportSystem/Tram.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/TransportSystem/TransportControl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/TransportSystem/TransportManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/TransportSystem/Vehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt1/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt1/Developer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt1/Employee.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt1/HRManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt1/Maneger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt3/3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt4/4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt4/ControlInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt4/Device.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt4/Heating.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt4/Lighting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt4/Security.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt4/SecuritySystem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt4/SmartHome.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt5/5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt6/6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorkJava/src/java22_11_23/Classes/txt7/7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HomeWorkJava/Java29_11_23/taski.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HomeWorkJava/homeWork27_11_23/taski1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HomeWorkJava/java22_11_23/Classes/ControlStaffCompany/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HomeWorkJava/java22_11_23/Classes/TransportSystem/2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HomeWorkJava/java22_11_23/Classes/txt1/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HomeWorkJava/java22_11_23/Classes/txt3/3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HomeWorkJava/java22_11_23/Classes/txt4/4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HomeWorkJava/java22_11_23/Classes/txt5/5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HomeWorkJava/java22_11_23/Classes/txt6/6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HomeWorkJava/java22_11_23/Classes/txt7/7.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java20_11_23/Classes/Library/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java20_11_23/Classes/Library/Librarian.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java20_11_23/Classes/Library/Library.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java20_11_23/Classes/Library/Reader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java20_11_23/Classes/OrderManagementSystem/Customer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java20_11_23/Classes/OrderManagementSystem/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java20_11_23/Classes/OrderManagementSystem/OrderManagementSystem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java20_11_23/Classes/OrderManagementSystem/OrderManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java20_11_23/Classes/OrderManagementSystem/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java20_11_23/Classes/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java20_11_23/Classes/TransportFleetManagementSystem/Car.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java20_11_23/Classes/TransportFleetManagementSystem/Driver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java20_11_23/Classes/TransportFleetManagementSystem/Fleet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java20_11_23/Classes/TransportFleetManagementSystem/FleetManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java29_11_23/libraryManagementSystem/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java29_11_23/libraryManagementSystem/BookStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java29_11_23/libraryManagementSystem/Borrowable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java29_11_23/libraryManagementSystem/CollectionProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java29_11_23/libraryManagementSystem/Genre.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java29_11_23/libraryManagementSystem/ItemCondition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java29_11_23/libraryManagementSystem/Librarian.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java29_11_23/libraryManagementSystem/LibraryCatalogue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java29_11_23/libraryManagementSystem/LibraryItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java29_11_23/libraryManagementSystem/Magazine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java29_11_23/libraryManagementSystem/Maintainable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java29_11_23/libraryManagementSystem/Searchable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java29_11_23/libraryManagementSystem/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java29_11_23/libraryManagementSystem/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Java29_11_23/taski.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/homeWork27_11_23/task1/Task1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/homeWork27_11_23/task10/Task10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/homeWork27_11_23/task11/Task11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/homeWork27_11_23/task12/Task12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/homeWork27_11_23/task13/Task13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/homeWork27_11_23/task14/Task14.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/homeWork27_11_23/task2/Task2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/homeWork27_11_23/task3/Task3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/homeWork27_11_23/task4/Task4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/homeWork27_11_23/task5/Task5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/homeWork27_11_23/task6/task6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/homeWork27_11_23/task7/task7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/homeWork27_11_23/task8/Task8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/homeWork27_11_23/task9/task9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/homeWork27_11_23/taski1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java04_12_23/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java04_12_23/taski.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/ControlStaffCompany/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/ControlStaffCompany/Department.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/ControlStaffCompany/DepartmentOperations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/ControlStaffCompany/Developer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/ControlStaffCompany/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/ControlStaffCompany/EmployeeActions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/ControlStaffCompany/HRManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/ControlStaffCompany/Manager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/ControlStaffCompany/NameDepartment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/ControlStaffCompany/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/TransportSystem/2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/TransportSystem/Bus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/TransportSystem/Maintenance.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/TransportSystem/Taxi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/TransportSystem/Tram.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/TransportSystem/TransportControl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/TransportSystem/TransportManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/TransportSystem/Vehicle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/txt1/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/txt1/Developer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/txt1/Employee.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/txt1/EmployeeActions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/txt1/HRManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/txt1/Maneger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/txt3/3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/txt4/4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/txt4/ControlInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/txt4/Device.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/txt4/Heating.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/txt4/Lighting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/txt4/Security.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/txt4/SecuritySystem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/txt4/SmartHome.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/txt5/5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/txt6/6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/java22_11_23/Classes/txt7/7.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -347,7 +169,20 @@
       <option name="presentableId" value="Default" />
       <updated>1701542126341</updated>
     </task>
+    <task id="LOCAL-00001" summary="new">
+      <option name="closed" value="true" />
+      <created>1702133114410</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702133114410</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new" />
+    <option name="LAST_COMMIT_MESSAGE" value="new" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
