@@ -4,11 +4,20 @@ public abstract class  LibraryItem {
    private String title;
    private String author;
     private Genre genre;
+    private ItemCondition itemCondition;
 
     public LibraryItem(String title, String author, Genre genre) {
         this.title = title;
         this.author = author;
         this.genre = genre;
+    }
+
+    public ItemCondition getItemCondition() {
+        return itemCondition;
+    }
+
+    public void setItemCondition(ItemCondition itemCondition) {
+        this.itemCondition = itemCondition;
     }
 
     public String getTitle() {

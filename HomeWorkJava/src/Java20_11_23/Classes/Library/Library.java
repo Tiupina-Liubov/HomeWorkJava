@@ -1,7 +1,5 @@
 package src.Java20_11_23.Classes.Library;
 
-import src.Java29_11_23.libraryManagementSystem.Librarian;
-
 public class Library {
 
     private String name;
@@ -14,6 +12,9 @@ public class Library {
     }
 
     public Library() {
+    }
+
+    public static void addLibrarian(src.Java20_11_23.Classes.Library.Librarian librarian3, src.Java20_11_23.Classes.Library.Librarian librarian) {
     }
 
     public void setLibrarians(Librarian[] librarians) {
@@ -32,12 +33,12 @@ public class Library {
         return librarians;
     }
 
-    public static Librarian findALibrarianByName(Librarian[] librarians, String name) {
+    public static Librarian findALibrarianByName(Library[] librarians, String name) {
 
         Librarian librarian = null;
         for (int i = 0; i < librarians.length; i++) {
             if (librarians[i].getName().equalsIgnoreCase(name)) {
-                librarian = librarians[i];
+                librarian = (Librarian) librarians[i];
                 break;
             }
         }

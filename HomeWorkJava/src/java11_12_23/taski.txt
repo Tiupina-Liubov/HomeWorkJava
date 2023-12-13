@@ -1,0 +1,39 @@
+void printMap(Map<String, String> map) {
+} Вывести все ключи и значения
+
+Set<String> findKeysByValue(Map<String, String> map, String value) {
+} Найти ключи, значения которых равны заданной строке.
+
+Map<String, String> mergeMapsIfUniqueKeys(Map<String, String> map1, Map<String, String> map2) {
+}Объединить две мапы, если у них нет одинаковых ключей.//set
+
+Map<String, String> invertMap(Map<String, String> map) {
+}Инвертировать мапу (ключи становятся значениями и наоборот).
+
+int countUniqueValues(Map<String, String> map) {
+}Найти количество уникальных значений в мапе  //
+
+Set<String> findAllValues(Set<Map<Integer, String>> setOfMaps) {
+ }Вывести все строки, которые являются значениями в любой из мап.
+
+int sumAllKeys(Set<Map<Integer, String>> setOfMaps) {
+}Найти сумму всех ключей всех мап.
+
+boolean containsValue(Set<Map<Integer, String>> setOfMaps, String value) {
+}Определить, содержится ли заданная строка как значение хотя бы в одной из мапы.
+
+Set<String> findAllStringsWithChar(Set<Map<Character, Set<String>>> complexSet, char c) {
+}Найти все строки, которые начинаются с заданного символа во всех вложенных сетах.
+
+Map<Character, Integer> countStringOccurrences(Set<Map<Character, Set<String>>> complexSet) {
+}Создать мапу, где ключами являются символы, а значениями - количество раз, которое
+строки начинающиеся на этот символ встречаются во всех вложенных сетах.
+
+
+
+
+
+
+
+
+

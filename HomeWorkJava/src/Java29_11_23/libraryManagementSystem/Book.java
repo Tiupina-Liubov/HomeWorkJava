@@ -7,6 +7,17 @@ public class Book extends LibraryItem implements Borrowable, Maintainable {
     private BookStatus status;
     private LocalDate publishDate;
     private int pageCount;
+    private ItemCondition itemCondition;
+
+    public ItemCondition getItemCondition() {
+        return itemCondition;
+    }
+
+    public void setItemCondition(ItemCondition itemCondition) {
+        this.itemCondition = itemCondition;
+    }
+
+
 
     public BookStatus getStatus() {
         return status;
@@ -39,17 +50,16 @@ public class Book extends LibraryItem implements Borrowable, Maintainable {
         this.pageCount = pageCount;
 
     }
-
-
     @Override
     public String toString() {
         return "\nBook{" +
-                "status=" + status +
-                ", publishDate=" + publishDate +
-                ", pageCount=" + pageCount +
-                ", title='" + getTitle()+ '\'' +
-                ", author='" + getAuthor() + '\'' +
-                ", genre=" + getGenre() + "}";
+                "Status=" + status +
+                ", PublishDate=" + publishDate +
+                ", PageCount=" + pageCount +
+                ", Title='" + getTitle()+ '\'' +
+                ", Author='" + getAuthor() + '\'' +
+                ", Item Condition='" + getItemCondition()+ '\'' +
+                ", Genre=" + getGenre() + "}";
     }
     @Override
     public void borrowItem(User user) {

@@ -1,7 +1,7 @@
-package src.Java20_11_23.Classes.Library;
+package src.Java20_11_23.Classes;
 
 import src.Java20_11_23.Classes.Library.Book;
-
+import src.Java20_11_23.Classes.Library.Librarian;
 import src.Java20_11_23.Classes.Library.Library;
 import src.Java20_11_23.Classes.Library.Reader;
 import src.Java20_11_23.Classes.OrderManagementSystem.Customer;
@@ -11,7 +11,6 @@ import src.Java20_11_23.Classes.OrderManagementSystem.Product;
 import src.Java20_11_23.Classes.TransportFleetManagementSystem.Car;
 import src.Java20_11_23.Classes.TransportFleetManagementSystem.Driver;
 import src.Java20_11_23.Classes.TransportFleetManagementSystem.Fleet;
-import src.Java20_11_23.Classes.TransportFleetManagementSystem.FleetManager;
 import src.Java20_11_23.Classes.TransportFleetManagementSystem.FleetManager;
 
 import java.util.Arrays;
@@ -67,12 +66,12 @@ public class Test {
 //        Библиотека (Library)
 //        Поля: название, адрес, список библиотекарей (массив).
 //        Методы: добавить библиотекаря, найти библиотекаря по имени.
-        Library[] librarians = {librarian, librarian1, librarian2, librarian3, null, null};
+        Librarian[] librarians = {librarian, librarian1, librarian2, librarian3, null, null};
         String name = "Tiupina Liubov";
         System.out.println(Library.findALibrarianByName(librarians, name));
         Librarian librarian4 = new Librarian("Pupkin Sascha", 5);
-        Library.addLibrarian(librarian4, librarians);
-        System.out.println(librarians);
+        Library.addLibrarian(librarian3, librarian);
+        System.out.println(librarian);
         //        Система Управления Заказами
 //        Классы:
 //        Товар (Product)

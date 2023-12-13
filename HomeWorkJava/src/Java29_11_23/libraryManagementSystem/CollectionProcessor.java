@@ -1,11 +1,9 @@
 package src.Java29_11_23.libraryManagementSystem;
 
-import java.lang.reflect.Array;
+
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
+
 
 public class CollectionProcessor {
     public static void main(String[] args) {
@@ -24,6 +22,7 @@ public class CollectionProcessor {
         items.add(book5);
         items.add(book6);
         items.add(book1);
+        book2.setItemCondition(ItemCondition.NEEDS_RENOVATION);
 
         printAllItems(items);
         System.out.println("----");
@@ -36,9 +35,14 @@ public class CollectionProcessor {
         filterByAuthor(items, "lev tolstoy");
         countItemsByStatus(items, BookStatus.BORROWED);
         updateStatus(items, BookStatus.BORROWED, BookStatus.AVAILABLE);
-        System.out.println(items);
-        listAvailableItems(items);
-        findOldestItem(items);
+//        System.out.println(items);
+//        listAvailableItems(items);
+//        findOldestItem(items);
+//        System.out.println("_________");
+//        System.out.println(items);
+//        groupItemsByAuthor(items);
+        listItemsForRepair(items);
+        displayItemCount(items);
 
 
     }
@@ -150,19 +154,50 @@ public class CollectionProcessor {
     }
 
     static void groupItemsByAuthor(List<LibraryItem> items) {
+        items.sort(Comparator.comparing(LibraryItem::getAuthor));
 
     }
 
     static void listItemsForRepair(List<LibraryItem> items) {
+        for (LibraryItem item:items){
+            if(item.getItemCondition()==(ItemCondition.NEEDS_RENOVATION)){
+                System.out.println(item);
+            }
+        }
 
     }
 
     static void displayItemCount(List<LibraryItem> items) {
-
+       int count= items.size();
+       int countBook=0;
+       int countMagazine=0;
+        for(LibraryItem item:items){
+            if(item instanceof Book){
+                countBook++;
+            }else if(item instanceof Magazine){
+                countMagazine++;
+            }
+        }
+        System.out.println("There are " +count+" items in total."+"\n Of these, "+countBook+" are books and "+countMagazine+" are magazines.");
     }
 
     static void listBorrowedItemsByUser(List<LibraryItem> items, User user) {
-
+        List<Book> borrowedBook=new ArrayList<>();
+        List<Magazine> borrowedMagazine=new ArrayList<>();
+        for (LibraryItem item:items){
+            if(item instanceof Book){
+                if(((Book) item).getStatus().equals(BookStatus.BORROWED)){
+                    int index =0;
+                 borrowedBook.add(index,(Book) item);
+                }
+            }else if(item instanceof Magazine){
+                if(((Magazine) item).getStatus().equals(BookStatus.BORROWED)){
+                    int index =0;
+                    borrowedMagazine.add(index,(Magazine) item);
+            }
+        }
+    }
+        System.out.println(" ");
     }
 
     static void removeLostItems(List<LibraryItem> items) {

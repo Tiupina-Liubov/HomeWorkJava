@@ -1,10 +1,13 @@
 package src.Java29_11_23.libraryManagementSystem;
 
+import com.github.javafaker.Faker;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Test {
+    private static final Faker FAKER = new Faker();
     public static void main (String [] args){
         Book book=new Book("Black Fire","Shiku Nori",Genre.FANTASY,BookStatus.AVAILABLE, LocalDate.of(2014,01,1),320);
         Book book1=new Book("Gates of World","Frederik Snou",Genre.FANTASY,BookStatus.BORROWED, LocalDate.of(1994,8,24),217);
@@ -15,6 +18,8 @@ public class Test {
         items.add(book2);
         items.add(book3);
         items.add(book);
+
+
 
 
 
