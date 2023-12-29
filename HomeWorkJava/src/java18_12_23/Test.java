@@ -50,7 +50,7 @@ public class Test {
     }
 
 
-    public static int wordsTheirNumber(String text) {
+    public static int wordsTheirNumber(String text){
         Map<String, Integer> mapString = new HashMap<>();
         int couch = 0;
         String[] textWord = gettingCollectionWords(text);

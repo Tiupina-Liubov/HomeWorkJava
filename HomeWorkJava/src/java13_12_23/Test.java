@@ -33,8 +33,10 @@ public class Test {
         map.put("A", "C");
         map.put("B", "D");
         System.out.println(map);
+        System.out.println("________");
         replacingValueViaKey(map,"A","M");
         System.out.println(map);
+        System.out.println("++++++++");
         Map<String,String> invertMap=invert(map);
         System.out.println(invertMap);
 
@@ -66,14 +68,11 @@ public  static boolean areAnagrams(String str1, String str2){
         return true;
 }
 public  static void replacingValueViaKey(Map<String, String>map,String key,String newValue){
-        for(Map.Entry<String,String> m:map.entrySet()){
             if(!map.containsKey(key)){
                 System.out.println(" There is no such key in this HashMap");
-                break;
-            }else if(key.equals(m.getKey())){
-                m.setValue(newValue);
+            }else{
+               map.put(key,newValue);
             }
-        }
 }
     public static void rotate(QueueClass<String> queue, int k) {
         if (!queue.isEmpty()) {
@@ -94,7 +93,8 @@ public  static void replacingValueViaKey(Map<String, String>map,String key,Strin
 
     public static String reverse(String str) {
         if (str.isEmpty()) {
-            System.out.println(" String is empty ");
+            return "String is empty ";
+
         }
         char[] chars = str.toCharArray();
         Stack<Character> stack = filingStake(chars);
