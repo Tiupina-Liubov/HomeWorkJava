@@ -7,10 +7,10 @@ public class Handler {
     private static Set<Team<Adult>> setAdult;
     private static Set<Team<Teenager>> setTeenager;
     private static Set<Team<Pupil>> setPupil;
-    private static Map<Team<Teenager>, Float> mapTeenager = new HashMap<>();
-    private static Map<Team<Adult>, Float> mapAdult = new HashMap<>();
-    private static Map<Team<Pupil>, Float> mapPupil = new HashMap<>();
-    private static Map<Team<Participant>, Float> teamsMap = new HashMap<>();
+    private static Map<Team<Teenager>, Float> mapTeenager = new LinkedHashMap<>();
+    private static Map<Team<Adult>, Float> mapAdult = new LinkedHashMap<>();
+    private static Map<Team<Pupil>, Float> mapPupil = new LinkedHashMap<>();
+    private static Map<Team<Participant>, Float> teamsMap = new LinkedHashMap<>();
     private static List<Participant> allParticipants = new ArrayList<>();
     private static Map<Map<String, String>, List<Float>> listGamingStatistics = new HashMap<>();
 
@@ -136,17 +136,17 @@ public class Handler {
             if (t.getParticipants().get(0) instanceof Adult) {
                 adultSet.add((Team<Adult>) t);
                 setAdult = adultSet;
-                mapAdult = Utility.map(setAdult);
+                mapAdult = Utility.addNewMap(setAdult);
                 t.setCategory(Category.ADULT);
             } else if (t.getParticipants().get(0) instanceof Teenager) {
                 teenagerSet.add((Team<Teenager>) t);
                 setTeenager = teenagerSet;
-                mapTeenager = Utility.map(setTeenager);
+                mapTeenager = Utility.addNewMap(setTeenager);
                 t.setCategory(Category.TEENAGER);
             } else if (t.getParticipants().get(0) instanceof Pupil) {
                 pupilSet.add((Team<Pupil>) t);
                 setPupil = pupilSet;
-                mapPupil = Utility.map(setPupil);
+                mapPupil = Utility.addNewMap(setPupil);
                 t.setCategory(Category.PUPIL);
             }
         }

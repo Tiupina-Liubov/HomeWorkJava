@@ -49,10 +49,11 @@ public interface Utility  {
         }
     }
 
-    static <T extends Participant> Map<Team<T>, Float> map(Set<Team<T>> setTeams) {
+    static <T extends Participant> Map<Team<T>, Float> addNewMap(Set<Team<T>> setTeams) {
         Map<Team<T>, Float> map = new HashMap<>();
         for (Team<T> t : setTeams) {
             map.put(t, 0.0f);
+
         }
         return map;
     }
@@ -76,21 +77,15 @@ public interface Utility  {
         return aboveAverage;
     }
 
-    private static <T extends Participant> List<Map.Entry<Team<T>, Float>> comparatorSort(Map<Team<T>, Float> mapParticipant) {
+     static <T extends Participant> void sortBuPoints(Map<Team<T>, Float> mapParticipant) {
         Comparator<Map.Entry<Team<T>, Float>> comparator = Map.Entry.comparingByValue();
         List<Map.Entry<Team<T>, Float>> list = new ArrayList<>(mapParticipant.entrySet());
-        Collections.sort(list, comparator.reversed());
-        System.out.println(list);
-        return list;
+        list.sort(comparator.reversed());
+
+        System.out.println(mapParticipant);
+
     }
 
-    static <T extends Participant> void sortBuPoints(Map<Team<T>, Float> mapParticipant) {
-        List<Map.Entry<Team<T>, Float>> list = comparatorSort(mapParticipant);
-        mapParticipant.clear();
-        for (Map.Entry<Team<T>, Float> l : list) {
-            mapParticipant.put(l.getKey(), l.getValue());
-        }
-    }
 
     static Participant youngestPlayer(Map<Team<Participant>, Float> map) {
         Participant young = null;

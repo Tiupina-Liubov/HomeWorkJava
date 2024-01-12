@@ -7,11 +7,6 @@ public class Order extends OrderManagementSystem {
     boolean orderStatus;
     float totalAmount;
 
-
-    public void setOrderStatus(boolean orderStatus) {
-        this.orderStatus = orderStatus;
-    }
-
     public Product[] getListOfProducts() {
         return listOfProducts;
     }
@@ -22,6 +17,10 @@ public class Order extends OrderManagementSystem {
 
     public boolean isOrderStatus() {
         return orderStatus;
+    }
+
+    public void setOrderStatus(boolean orderStatus) {
+        this.orderStatus = orderStatus;
     }
 
     public float getTotalAmount() {

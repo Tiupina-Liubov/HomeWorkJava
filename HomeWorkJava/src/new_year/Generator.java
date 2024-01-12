@@ -51,6 +51,11 @@ public class Generator {
         return list;
     }
 
+    private static <T extends Participant> Team<T> newTeam(String str, List<T> listMap) {
+        Team<T> team = new Team<>(str, listMap);
+        return team;
+    }
+
     public static <T extends Participant> void getPrintTeam(Set<Team<T>> set) {
         if (!set.isEmpty()) {
             for (Team<T> m : set) {
@@ -60,11 +65,6 @@ public class Generator {
             System.out.println(" Set is empty elements");
 
         }
-    }
-
-    public static <T extends Participant> Team<T> newTeam(String str, List<T> listMap) {
-        Team<T> team = new Team<>(str, listMap);
-        return team;
     }
 }
 
