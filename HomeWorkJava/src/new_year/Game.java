@@ -54,7 +54,9 @@ public class Game {
         if (str1.equals(str2)) {
             return null;
         } else {
-            if ((str1.equals(HandPosition.SCISSORS.name()) && str2.equals(HandPosition.PAPER.name())) ^ (str1.equals(HandPosition.PAPER.name()) && str2.equals(HandPosition.STONE.name())) ^ (str1.equals(HandPosition.STONE.name()) && str2.equals(HandPosition.SCISSORS.name()))) {
+            if ((str1.equals(HandPosition.SCISSORS.name()) && str2.equals(HandPosition.PAPER.name())) ^ (str1
+                    .equals(HandPosition.PAPER.name()) && str2.equals(HandPosition.STONE.name())) ^
+                    (str1.equals(HandPosition.STONE.name()) && str2.equals(HandPosition.SCISSORS.name()))) {
                 return team1;
             } else {
                 return team2;
@@ -65,7 +67,8 @@ public class Game {
     private static <T extends Participant> void collectionStatisticalData(Team<T> team1, Team<T> team2, float couchTeam1, float couchTeam2) {
         if (Handler.getListGamingStatistics().size() == 0) {
             Handler.setListGamingStatistics(newStatisticMap(team1, team2, couchTeam1, couchTeam2));
-        } else if (!Handler.getListGamingStatistics().containsKey(newMapNameTeamsPlay(team1, team2)) && (!Handler.getListGamingStatistics().containsKey(newMapNameTeamsPlay(team2, team1)))) {
+        } else if (!Handler.getListGamingStatistics().containsKey(newMapNameTeamsPlay(team1, team2)) &&
+                (!Handler.getListGamingStatistics().containsKey(newMapNameTeamsPlay(team2, team1)))) {
             Handler.setListGamingStatistics(newStatisticMap(team1, team2, couchTeam1, couchTeam2));
         } else {
             if (Handler.getListGamingStatistics().containsKey(newMapNameTeamsPlay(team1, team2))) {

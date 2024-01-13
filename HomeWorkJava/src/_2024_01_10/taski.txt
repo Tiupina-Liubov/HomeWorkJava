@@ -36,7 +36,7 @@
 Сигнатура: List<String> convertToStringList(List<Character> input);
 
 +12. Задача: Фильтрация символов по ASCII-значению.
-Сигнатура: List<Character> filterByAsciiValue(List<Character> input, int ascii);
+Сигнатура: List<Character> filterByAsciiValue(List<Character> input, int ascii);// peredelat po drugomu
 
 +13. Задача: Проверка, все ли символы в списке заглавные.
 Сигнатура: boolean areAllUpperCase(List<Character> input);
@@ -44,39 +44,37 @@
 +14. Задача: Найти первый повторяющийся символ.
 Сигнатура: Optional<Character> findFirstDuplicate(List<Character> input);
 
-15. Задача: Получить обратный список символов.
++15. Задача: Получить обратный список символов.
 Сигнатура: List<Character> reverseList(List<Character> input);
 
 Числа с плавающей точкой (Floats):
-16. Задача: Найти минимальное число в списке.
++16. Задача: Найти минимальное число в списке.
 Сигнатура: Optional<Float> findMin(List<Float> input);
 
-17. Задача: Получить список чисел, умноженных на заданное число.
++17. Задача: Получить список чисел, умноженных на заданное число.
 Сигнатура: List<Float> multiplyBy(List<Float> input, float multiplier);
 
-18. Задача: Отфильтровать числа, меньшие заданного значения.
++18. Задача: Отфильтровать числа, меньшие заданного значения.
 Сигнатура: List<Float> filterLessThan(List<Float> input, float value);
 
-19. Задача: Проверить, содержит ли список отрицательные числа.
++19. Задача: Проверить, содержит ли список отрицательные числа.
 Сигнатура: boolean containsNegative(List<Float> input);
 
-20. Задача: Округление всех чисел в списке до ближайшего целого.
++20. Задача: Округление всех чисел в списке до ближайшего целого.
 Сигнатура: List<Integer> roundNumbers(List<Float> input);
 
 Общие задачи для всех типов:**
-21. Задача: Найти количество уникальных элементов в списке.
++21. Задача: Найти количество уникальных элементов в списке.
 Сигнатура: <T> long countUnique(List<T> input);
 
-22. Задача: Определить, является ли список отсортированным.
++22. Задача: Определить, является ли список отсортированным.
 Сигнатура: <T extends Comparable<T>> boolean isSorted(List<T> input);
 
-23. Задача: Получить последний элемент списка, если он существует.
++23. Задача: Получить последний элемент списка, если он существует.
 Сигнатура: <T> Optional<T> getLastElement(List<T> input);
 
-24. Задача: Перемешать элементы списка.
++24. Задача: Перемешать элементы списка.
 Сигнатура: <T> List<T> shuffleList(List<T> input);
 
-25. Задача: Подсчитать частоту каждого элемента в списке.
++25. Задача: Подсчитать частоту каждого элемента в списке.
 Сигнатура: <T> Map<T, Long> countFrequency(List<T> input);
-
-terminal operator citaty

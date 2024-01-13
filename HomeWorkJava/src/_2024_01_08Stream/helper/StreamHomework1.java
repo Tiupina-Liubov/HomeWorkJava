@@ -110,7 +110,6 @@ public class StreamHomework1 {
         return numbers.stream()
                 .reduce(Integer::sum)
                 .get();
-
     }
 
     private static List<String> m4(List<String> strings, int length) {
@@ -132,7 +131,6 @@ public class StreamHomework1 {
                 .filter(n -> n % 3 == 0 || n % 5 == 0)
                 .reduce(Integer::sum)
                 .get();
-
     }
 
     public static List<String> returnWordsUniqueCharacters(List<String> words) {

@@ -12,7 +12,7 @@ public class Handler {
     private static Map<Team<Pupil>, Float> mapPupil = new LinkedHashMap<>();
     private static Map<Team<Participant>, Float> teamsMap = new LinkedHashMap<>();
     private static List<Participant> allParticipants = new ArrayList<>();
-    private static Map<Map<String, String>, List<Float>> listGamingStatistics = new HashMap<>();
+    private static Map<Map<String, String>, List<Float>> listGamingStatistics = new LinkedHashMap<>();
 
     public static Set<Team<? extends Participant>> getParticipantTeams() {
         return participantTeams;
@@ -128,7 +128,7 @@ public class Handler {
         return teamsMap;
     }
 
-    public static <T extends Participant> void sortingParameterWritingToHandler(Set<Team<? extends Participant>> setParticipant) {
+    public static  void sortingParameterWritingToHandler(Set<Team<? extends Participant>> setParticipant) {
         Set<Team<Adult>> adultSet = new HashSet<>();
         Set<Team<Teenager>> teenagerSet = new HashSet<>();
         Set<Team<Pupil>> pupilSet = new HashSet<>();
