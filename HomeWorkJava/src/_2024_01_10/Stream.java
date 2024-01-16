@@ -138,7 +138,7 @@ public class Stream {
 
     public static <T extends Comparable<T>> boolean isSorted(List<T> input) {
         return IntStream.range(0, input.size() - 1)
-                .noneMatch(index -> input.get(index).compareTo(input.get(index + 1)) > 0);
+                .noneMatch(index -> input.get(index).compareTo(input.get(index + 1)) >0);
     }
 
     public static <T> Optional<T> getLastElement(List<T> input) {

@@ -41,6 +41,7 @@ public class Test {
         System.out.println("Получить обратный список символов.");
         System.out.println(Stream.reverseList(characterList));
         List<Float> floatList = Arrays.asList(1.1f, 2.9f, 3.0f, 0.001f, -0.03f);
+        List<Float>floatList1=Arrays.asList(0.0f,1.0f,1.1f,2.0f);
         System.out.println("Найти минимальное число в списке \n" + floatList);
         System.out.println(Stream.findMin(floatList));
         System.out.println("Получить список чисел, умноженных на заданное число <5>");
@@ -54,7 +55,10 @@ public class Test {
         System.out.println("Найти количество уникальных элементов в списке.");
         System.out.println(Stream.countUnique(floatList));
         System.out.println("Определить, является ли список отсортированным.");
+        System.out.println(floatList);
         System.out.println(Stream.isSorted(floatList));
+        System.out.println(floatList1);
+        System.out.println(Stream.isSorted(floatList1));
         System.out.println("Получить последний элемент списка, если он существует " + characterList);
         System.out.println(Stream.getLastElement(characterList));
         System.out.println("Перемешать элементы списка.");
