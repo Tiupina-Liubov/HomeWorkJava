@@ -78,3 +78,5 @@
 
 +25. Задача: Подсчитать частоту каждого элемента в списке.
 Сигнатура: <T> Map<T, Long> countFrequency(List<T> input);
+
+terminal operator citaty

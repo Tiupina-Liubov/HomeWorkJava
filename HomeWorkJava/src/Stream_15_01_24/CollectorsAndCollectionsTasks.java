@@ -8,14 +8,16 @@ import java.util.stream.Stream;
 public class CollectorsAndCollectionsTasks {
 
     public static void main(String[] args) {
-        // Задача 1: Собрать элементы потока в список.
+        // Задача 1: Собрать элементы потока в () -> список
         List<Integer> integerList = Stream.of(1, 2, 3, 6, 8, 7, 7, 7, 8, 0, 0, 11, 9, 0, 1, 4, 6)
                 .collect(Collectors.toList()); //.toList;
         System.out.println(integerList);
+
         // Задача 2: Удалить дубликаты из списка и собрать их в множество.
         Set<Integer> integers = integerList.stream()
                 .collect(Collectors.toSet());// kak to po drugomu
         System.out.println(integers);
+
         // Задача 3: Группировка строк по длине.
         Map<Integer, List<String>> integerStringMap = Stream.of("Liubov", "Katya", "Sascha", "Kolja", "Petja", "Max", "Petja", "Petja", "Petja")
                 .collect(Collectors.groupingBy(String::length));
@@ -56,7 +58,11 @@ public class CollectorsAndCollectionsTasks {
                 .collect(Collectors.summarizingInt(Person::getAge))
                .getSum();
         System.out.println(sum);
+
         // Задача 10: Группировка по критерию и подсчет среднего.
+        Map<String, Double> averageByName = peoples.stream()
+                .collect(Collectors.groupingBy(Person::getName, Collectors.averagingDouble(p -> p.getNumbers().stream().mapToDouble(Integer::doubleValue).average().orElse(0))));
+        System.out.println(averageByName);
 
 
 
