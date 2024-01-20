@@ -18,4 +18,12 @@ public class Department {
     public List<Employee1> getEmployees1() {
         return employees;
     }
+
+    @Override
+    public String toString() {
+        return "Department{" +
+                "name='" + name + '\'' +
+                ", employees=" + employees +
+                '}';
+    }
 }

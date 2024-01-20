@@ -18,4 +18,12 @@ public class Book {
     public List<String> getAuthors() {
         return authors;
     }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "title='" + title + '\'' +
+                ", authors=" + authors +
+                '}';
+    }
 }

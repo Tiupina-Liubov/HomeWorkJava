@@ -2,28 +2,28 @@ package src._2024_01_17.Clases;
 
 import java.util.List;
 
-public class Project {
+public class Student {
     private String name;
-    private List<String> tasks;
+    private List<Subject> subjects;
 
-    public Project(String name, List<String> tasks) {
+    public Student(String name, List<Subject> subjects) {
         this.name = name;
-        this.tasks = tasks;
+        this.subjects = subjects;
     }
 
     public String getName() {
         return name;
     }
 
-    public List<String> getTasks() {
-        return tasks;
+    public List<Subject> getSubjects() {
+        return subjects;
     }
 
     @Override
     public String toString() {
-        return "Project{" +
+        return "Student{" +
                 "name='" + name + '\'' +
-                ", tasks=" + tasks +
+                ", subjects=" + subjects +
                 '}';
     }
 }

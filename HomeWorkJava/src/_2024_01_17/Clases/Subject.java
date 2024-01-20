@@ -1,27 +1,27 @@
 package src._2024_01_17.Clases;
 
-public class Item {
+public class Subject {
     private String name;
-    private double price;
+    private double score;
 
-    public Item(String name, double price) {
+    public Subject(String name, double score) {
         this.name = name;
-        this.price = price;
+        this.score = score;
     }
 
     public String getName() {
         return name;
     }
 
-    public double getPrice() {
-        return price;
+    public double getScore() {
+        return score;
     }
 
     @Override
     public String toString() {
-        return "Item{" +
+        return "Subject{" +
                 "name='" + name + '\'' +
-                ", price=" + price +
+                ", score=" + score +
                 '}';
     }
 }

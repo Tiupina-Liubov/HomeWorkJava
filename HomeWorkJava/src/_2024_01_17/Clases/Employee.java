@@ -18,4 +18,12 @@ public class Employee {
     public List<String> getLanguages() {
         return languages;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "department='" + department + '\'' +
+                ", languages=" + languages +
+                '}';
+    }
 }

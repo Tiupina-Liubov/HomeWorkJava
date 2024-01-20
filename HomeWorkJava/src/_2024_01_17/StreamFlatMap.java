@@ -5,6 +5,7 @@ import src._2024_01_17.Clases.*;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class StreamFlatMap {
     public static List<Integer> flattenListOfLists(List<List<Integer>> listOfLists) {
@@ -60,14 +61,14 @@ public class StreamFlatMap {
                 .toList();
     }
 
-    public List<String> combineAndTransform(List<Integer> list1, List<Double> list2, Function<Number, String> transformer) {
+    public static List<String> combineAndTransform(List<Integer> list1, List<Double> list2, Function<Number, String> transformer) {
         return list1.stream()
-                .flatMap(l2 -> list2.stream().map(transformer))
+                .flatMap(l1 -> list2.stream().map(l2 -> l1 + l2))
+                .map(transformer)
                 .toList();
-
     }
 
-    public List<String> getLanguagesFromDepartment(List<Employee> employees, String department) {
+    public static List<String> getLanguagesFromDepartment(List<Employee> employees, String department) {
         return employees.stream()
                 .filter(employee -> employee.getDepartment().equals(department))
                 .flatMap(employee -> employee.getLanguages().stream())
@@ -75,14 +76,14 @@ public class StreamFlatMap {
 
     }
 
-    public List<Item> getItemsByCustomerName(List<Order> orders, String customerName) {
+    public static List<Item> getItemsByCustomerName(List<Order> orders, String customerName) {
         return orders.stream()
                 .filter(order -> order.getCustomerName().equals(customerName))
                 .flatMap(order -> order.getItems().stream())
                 .toList();
     }
 
-    public double getTotalSalaryByDepartment(List<Department> departments, String departmentName) {
+    public static double getTotalSalaryByDepartment(List<Department> departments, String departmentName) {
         return departments.stream()
                 .filter(department -> department.getName().equals(departmentName))
                 .flatMap(department -> department.getEmployees1().stream())
@@ -90,32 +91,52 @@ public class StreamFlatMap {
                 .sum();
     }
 
-    public List<String> combineAndTransformComplex(List<Integer> integers, List<String> strings, List<Double> doubles) {
+    public static List<String> combineAndTransformComplex(List<Integer> integers, List<String> strings, List<Double> doubles) {
         return strings.stream()
-                .flatMap(i->integers.stream().map(String::valueOf))
-                .flatMap(d->doubles.stream().map(String::valueOf))
+                .flatMap(i -> integers.stream().map(String::valueOf))
+                .flatMap(d -> doubles.stream().map(String::valueOf))
                 .toList();
     }
 
-    public Map<String, Double> averageSalaryByCompany(List<Company> companies) {
+    public static Map<String, Double> averageSalaryByCompany(List<Company> companies) {
         return companies.stream()
                 .collect(Collectors.toMap(Company::getName,
-                                company -> company.getDepartments().stream()
-                                        .flatMap(department -> department.getEmployees1().stream())
-                                        .mapToDouble(Employee1::getSalary)
-                                        .average()
-                                        .orElse(0.0)
+                        company -> company.getDepartments().stream()
+                                .flatMap(department -> department.getEmployees1().stream())
+                                .mapToDouble(Employee1::getSalary)
+                                .average()
+                                .orElse(0.0)
                 ));
     }
 
-    public Map<String, List<String>> highValueProductsByCustomer(List<Order> orders, double threshold) {
+    public static Map<String, List<String>> highValueProductsByCustomer(List<Order> orders, double threshold) {
         return orders.stream()
                 .collect(Collectors.toMap(Order::getCustomerName,
-                        order-> order.getProducts().stream()
-                                .filter(product -> product.getPrice()>threshold)
+                        order -> order.getProducts().stream()
+                                .filter(product -> product.getPrice() > threshold)
                                 .map(Product::getCategory)
                                 .toList()));
     }
 
+    public static Map<String, Map<String, Double>> averageScoreBySubjectForTopStudents(List<School> schools, double threshold) {
+        return schools.stream()
+                .collect(Collectors.toMap(School::getName,
+                        school -> school.getStudentsByClass()
+                                .entrySet()
+                                .stream()
+                                .flatMap(classEntry -> classEntry.getValue().stream())
+                                .filter(student -> student.getSubjects().stream()
+                                        .mapToDouble(Subject::getScore)
+                                        .average()
+                                        .orElse(0.0) > threshold)
+                                .collect(Collectors.toMap(
+                                        Student::getName,
+                                        student -> student.getSubjects().stream()
+                                                .mapToDouble(Subject::getScore)
+                                                .average()
+                                                .orElse(0.0)
+                                ))));
 
+
+    }
 }

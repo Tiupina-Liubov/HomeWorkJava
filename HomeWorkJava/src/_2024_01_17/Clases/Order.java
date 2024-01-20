@@ -25,4 +25,13 @@ public class Order {
     public List<Product> getProducts() {
         return products;
     }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "customerName='" + customerName + '\'' +
+                ", items=" + items +
+                ", products=" + products +
+                '}';
+    }
 }

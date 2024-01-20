@@ -18,4 +18,12 @@ public class User {
         public List<String> getSkills() {
                 return skills;
         }
+
+        @Override
+        public String toString() {
+                return "User{" +
+                        "name='" + name + '\'' +
+                        ", skills=" + skills +
+                        '}';
+        }
 }
