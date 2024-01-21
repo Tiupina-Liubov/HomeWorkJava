@@ -5,13 +5,12 @@ import java.util.*;
 public class Test {
     public static void main(String[] args) {
 
-        Handler.setParticipantTeams(Generator.genTeams(3, 2, Teenager.class));
-        Handler.setParticipantTeams(Generator.genTeams(3, 2, Pupil.class));
-        Handler.setParticipantTeams(Generator.genTeams(3, 2, Adult.class));
-        System.out.println(Handler.getSetAdult());
-        System.out.println(Handler.getSetTeenager());
-        System.out.println(Handler.getSetPupil());
-        System.out.println("+++++++++");
+        Handler.setParticipantTeams(Generator.genTeams(25, 4, Teenager.class));
+        Handler.setParticipantTeams(Generator.genTeams(25, 4, Pupil.class));
+        Handler.setParticipantTeams(Generator.genTeams(25, 4, Adult.class));
+//        System.out.println(Handler.getSetAdult());
+//        System.out.println(Handler.getSetTeenager());
+//        System.out.println(Handler.getSetPupil());
         System.out.println(Handler.getMapTeenager());
         System.out.println(Handler.getMapAdult());
         System.out.println(Handler.getMapPupil());
@@ -19,19 +18,19 @@ public class Test {
         map1 = Handler.allTeamMap(Handler.getMapTeenager());
         map1 = Handler.allTeamMap(Handler.getMapPupil());
         map1 = Handler.allTeamMap(Handler.getMapAdult());
-        System.out.println("_______+++++");
-        System.out.println(Handler.getTeamMap());
-        System.out.println("___________++++++++");
-        Map<Team<Adult>, Float> playMapAdult = Game.resultPlayTeams(Handler.getMapAdult());
-        Map<Team<Pupil>, Float> playMapPupil = Game.resultPlayTeams(Handler.getMapPupil());
+       // System.out.println("_______+++++");
+      //  System.out.println(Handler.getTeamMap());
+       // System.out.println("___________++++++++");
+        //Map<Team<Adult>, Float> playMapAdult = Game.resultPlayTeams(Handler.getMapAdult());
+      // Map<Team<Pupil>, Float> playMapPupil = Game.resultPlayTeams(Handler.getMapPupil());
         Map<Team<Teenager>, Float> playMapTeenager = Game.resultPlayTeams(Handler.getMapTeenager());
-        System.out.println(playMapAdult);
-        System.out.println(playMapPupil);
-        System.out.println(playMapTeenager);
-        System.out.println(Handler.getListGamingStatistics());
-        for (Map<String,String> m: Handler.getListGamingStatistics().keySet()){
-            System.out.println(m);
-        }
+//        System.out.println(playMapAdult);
+//        System.out.println(playMapPupil);
+//        System.out.println(playMapTeenager);
+//        System.out.println(Handler.getListGamingStatistics());
+//        for (Map<String,String> m: Handler.getListGamingStatistics().keySet()){
+//            System.out.println(m);
+//        }
 
 //        System.out.println(" +++++++++ ");
 //        System.out.println(Utility.youngestPlayer(Handler.getTeamMap()));

@@ -29,7 +29,7 @@ public class StreamFlatMap {
 
     public static List<String> flattenMap(Map<String, List<String>> map) {
         return map.entrySet().stream()
-                .flatMap(stringListEntry -> stringListEntry.getValue().stream())//todo cerez mapppppp
+                .flatMap(stringListEntry -> stringListEntry.getValue().stream())
                 .toList();
     }
 

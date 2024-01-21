@@ -2,7 +2,7 @@ package src.new_year;
 
 import java.util.Comparator;
 
-public class Comporator implements Comparator {
+public class MyComparator implements Comparator {
     @Override
     public int compare(Object o1, Object o2) {
         return 0;
@@ -13,3 +13,4 @@ public class Comporator implements Comparator {
         return Comparator.super.reversed();
     }
 }
+

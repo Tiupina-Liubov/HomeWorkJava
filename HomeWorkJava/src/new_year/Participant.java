@@ -31,9 +31,13 @@ public class Participant implements Comparable<Participant> {
 
     @Override
     public boolean equals(Object o) {
+
         if (this == o) return true;
+
         if (!(o instanceof Participant)) return false;
+
         Participant that = (Participant) o;
+
         return age == that.age && Objects.equals(name, that.name);
     }
 
@@ -44,7 +48,7 @@ public class Participant implements Comparable<Participant> {
 
     @Override
     public String toString() {
-        return "Participant{" +
+        return getClass().getSimpleName() + "{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';
