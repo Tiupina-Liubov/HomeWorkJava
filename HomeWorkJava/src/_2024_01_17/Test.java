@@ -70,10 +70,11 @@ public class Test {
 
 
         //6. Преобразование и фильтрация объектов в списках
-        //Задание: Напишите метод, который фильтрует список объектов по некоторому условию,// todo nado dodelat
+        //Задание: Напишите метод, который фильтрует список объектов по некоторому условию,
         //а затем извлекает и объединяет определённые атрибуты этих объектов в один список.
         List<Employee> employees = Generator1.genListEmployees(3);
         System.out.println(employees);
+        System.out.println(StreamFlatMap.getLanguagesFromDepartment(employees, employees.get(1).getDepartment()));
 
         //7: Напишите метод, который принимает список списков списков чисел и преобразует его в один список чисел.
         List<List<List<Integer>>> deepList = Generator1.genList2OfList(2, 3, 2);
@@ -109,6 +110,31 @@ public class Test {
         List<Department> departments=Generator1.genDepartmentsList(3);
         System.out.println(departments);
         System.out.println(StreamFlatMap.getTotalSalaryByDepartment(departments,departments.get(2).getName()));
+
+        //13: Напишите метод, который принимает несколько списков различных типов данных, преобразует их и объединяет в один список.
+        System.out.println("++++++++++");
+        System.out.println(integers+" "+ strings+ " "+ doubles);
+        List<String> allListToString=StreamFlatMap.combineAndTransformComplex(integers,strings,doubles);
+        System.out.println(allListToString);
+
+        //14:  Напишите метод, который обрабатывает список объектов, содержащих другие объекты с коллекциями.
+        //Ваша задача - вычислить среднее значение некоторого числового поля для каждого уникального ключа.
+        List<Company> companies= Generator1.genListOfCompanies(3);
+        Map<String, Double>statisticOfCompany=StreamFlatMap.averageSalaryByCompany(companies);
+        System.out.println(statisticOfCompany);
+
+//       //15: Напишите метод, который анализирует данные из нескольких различных коллекций,
+//соединяет их и выводит результаты, соответствующие определённым критериям.
+        Map<String, List<String>> highValueProductsByCustomer=StreamFlatMap.highValueProductsByCustomer(orders,100.0);
+        System.out.println(highValueProductsByCustomer);
+
+        //16:
+        //Каждая школа содержит информацию о своих классах и студентах в этих классах.
+        //Задача состоит в том, чтобы вычислить средний балл по каждому предмету среди студентов,
+        //чей средний балл по всем предметам выше определённого порога (например, 8.0 из 10).
+        List<School> schools= Generator1.genListSchools(4);
+        System.out.println(StreamFlatMap.averageScoreBySubjectForTopStudents(schools, 5.5));
+
 
     }
 

@@ -2,10 +2,8 @@ package src._2024_01_17.Clases;
 
 import com.github.javafaker.Faker;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -21,7 +19,7 @@ public class Generator1 {
         return newList;
     }
 
-    private static List<Integer> genListInteger(int count) {
+    public static List<Integer> genListInteger(int count) {
         List<Integer> list = new ArrayList<>();
         for (int i = 0; i < count; i++) {
             list.add(RANDOM.nextInt(50));
@@ -37,7 +35,7 @@ public class Generator1 {
                 .toList();
     }
 
-    private static List<String> genListLanguages(int quantityLanguages) {
+    public static List<String> genListLanguages(int quantityLanguages) {
         return Stream.generate(() -> FAKER.programmingLanguage().name())
                 .limit(quantityLanguages)
                 .toList();
@@ -89,16 +87,57 @@ public class Generator1 {
                 .toList();
     }
 
-    public static List<Department> genDepartmentsList(int quantityDepartment){
-        return Stream.generate(()-> new Department(FAKER.medical().medicineName(),genListEmployees()))
+    public static List<Department> genDepartmentsList(int quantityDepartment) {
+        return Stream.generate(() -> new Department(FAKER.medical().medicineName(), genListEmployees()))
                 .limit(quantityDepartment)
                 .toList();
     }
 
-    private static List<Employee1> genListEmployees(){
-        return Stream.generate(()->new Employee1(FAKER.name().fullName(), RANDOM.nextInt(100)*20.4))
+    private static List<Employee1> genListEmployees() {
+        return Stream.generate(() -> new Employee1(FAKER.name().fullName(), RANDOM.nextInt(100) * 20.4))
                 .limit(RANDOM.nextInt(5))
                 .toList();
     }
 
+    public static List<Double> genListDouble() {
+        return Stream.generate(() -> RANDOM.nextInt(11) * 10.6)
+                .limit(RANDOM.nextInt(10))
+                .toList();
+    }
+
+    public static List<Company> genListOfCompanies(int quantityCompany) {
+        return Stream.generate(() -> new Company(FAKER.company().name(), genDepartmentsList(RANDOM.nextInt(5))))
+                .limit(quantityCompany)
+                .toList();
+    }
+
+    public static List<School> genListSchools(int quantitySchool) {
+        return Stream.generate(() -> new School(FAKER.team().state(),genMapOfStudents()))
+                .limit(quantitySchool)
+                .toList();
+    }
+
+    public static Map<String, List<Student>> genMapOfStudents() {
+        return Stream.generate(() -> FAKER.animal().name())
+                .limit(RANDOM.nextInt(6))
+                .collect(Collectors.toMap(
+                        c -> c,
+                        s -> genListOfStudents()
+                ));
+
+    }
+
+    public static List<Student> genListOfStudents() {
+        return Stream.generate(() -> new Student(FAKER.name().fullName(), genListSubjects()))
+                .limit(RANDOM.nextInt(6))
+                .toList();
+    }
+
+    public static List<Subject> genListSubjects() {
+        AtomicInteger count = new AtomicInteger(0);
+
+        return Stream.generate(() -> new Subject(Subjects.values()[count.getAndIncrement()].name(), RANDOM.nextDouble() * 12.0))
+                .limit(Subjects.values().length - 1)
+                .toList();
+    }
 }

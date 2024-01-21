@@ -68,6 +68,8 @@ public class StreamFlatMap {
                 .toList();
     }
 
+
+
     public static List<String> getLanguagesFromDepartment(List<Employee> employees, String department) {
         return employees.stream()
                 .filter(employee -> employee.getDepartment().equals(department))
@@ -92,10 +94,9 @@ public class StreamFlatMap {
     }
 
     public static List<String> combineAndTransformComplex(List<Integer> integers, List<String> strings, List<Double> doubles) {
-        return strings.stream()
-                .flatMap(i -> integers.stream().map(String::valueOf))
-                .flatMap(d -> doubles.stream().map(String::valueOf))
-                .toList();
+        return integers.stream()
+                .map(String::valueOf)
+                .toList();// todo: ne nravitsa kak rabotaet
     }
 
     public static Map<String, Double> averageSalaryByCompany(List<Company> companies) {
