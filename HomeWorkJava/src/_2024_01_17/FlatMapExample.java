@@ -15,7 +15,7 @@ public class FlatMapExample {
                 .filter(el -> el.equals("m"))
                 .toList();
 
-//      System.out.println(characters);
+        System.out.println(characters);
 
         List<List<Integer>> list = Arrays.asList(
                 Arrays.asList(1, 2),
@@ -24,13 +24,14 @@ public class FlatMapExample {
                 Arrays.asList(7, 8),
                 Arrays.asList(9, 10)
         );
-        List<Integer> integerList=StreamFlatMap.flattenListOfLists(list);
+
+        List<Integer> integerList = StreamFlatMap.flattenListOfLists(list);
         System.out.println(integerList);
 
-//        list.stream()
-//                .flatMap(Collection::stream)
-//                .filter(n -> n % 2 == 0)
-//                .forEach(System.out::println);
+        list.stream()
+                .flatMap(Collection::stream)
+                .filter(n -> n % 2 == 0)
+                .forEach(System.out::println);
 
         List<Integer> listA = Arrays.asList(1, 2, 3);
         List<Integer> listB = Arrays.asList(4, 5, 6);
@@ -59,10 +60,10 @@ public class FlatMapExample {
         System.out.println(StreamFlatMap.getSortedTasks(projects));
 
         Map<String, List<Product>> category = new HashMap<>();
-        category.put("Key1", List.of(new Product("ContainsMilk", "Milk",2.45)));
-        category.put("Key2", List.of(new Product("Meat/Fish", "Salmon",9.7)));
+        category.put("Key1", List.of(new Product("ContainsMilk", "Milk", 2.45)));
+        category.put("Key2", List.of(new Product("Meat/Fish", "Salmon", 9.7)));
         category.put("Key3", List.of(new Product("Drinks", "CocaCola", 1.5)));
-        category.put("Key4", List.of(new Product("Snacks", "Mini-Snickers",0.99)));
+        category.put("Key4", List.of(new Product("Snacks", "Mini-Snickers", 0.99)));
 
 
     }

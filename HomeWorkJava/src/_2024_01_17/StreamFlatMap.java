@@ -96,7 +96,9 @@ public class StreamFlatMap {
     public static List<String> combineAndTransformComplex(List<Integer> integers, List<String> strings, List<Double> doubles) {
         return integers.stream()
                 .map(String::valueOf)
-                .toList();// todo: ne nravitsa kak rabotaet
+                .flatMap(l1 -> doubles.stream().map(l2 -> l1 +  l2))
+                .flatMap(l3 -> strings.stream().map(l4 -> l4 + l3))
+                .toList();
     }
 
     public static Map<String, Double> averageSalaryByCompany(List<Company> companies) {

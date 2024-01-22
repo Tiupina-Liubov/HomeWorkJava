@@ -20,10 +20,6 @@ public class School {
         return studentsByClass;
     }
 
-    public void setStudentsByClass(Map<String, List<Student>> studentsByClass) {
-        this.studentsByClass = studentsByClass;
-    }
-
     @Override
     public String toString() {
         return "School{" +

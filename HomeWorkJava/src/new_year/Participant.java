@@ -34,9 +34,7 @@ public class Participant implements Comparable<Participant> {
 
         if (this == o) return true;
 
-        if (!(o instanceof Participant)) return false;
-
-        Participant that = (Participant) o;
+        if (!(o instanceof Participant that)) return false;
 
         return age == that.age && Objects.equals(name, that.name);
     }

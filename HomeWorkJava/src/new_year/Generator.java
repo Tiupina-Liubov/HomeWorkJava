@@ -2,10 +2,7 @@ package src.new_year;
 
 import com.github.javafaker.Faker;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Generator {
     private static final Faker FAKER = new Faker();
@@ -47,13 +44,12 @@ public class Generator {
                 participant--;
             }
         }
-        Handler.setAllParticipants((List<Participant>) list);
+        Handler.setAllParticipants(Collections.unmodifiableList(list));
         return list;
     }
 
     private static <T extends Participant> Team<T> newTeam(String str, List<T> listMap) {
-        Team<T> team = new Team<>(str, listMap);
-        return team;
+        return new Team<>(str, listMap);
     }
 
     public static <T extends Participant> void getPrintTeam(Set<Team<T>> set) {

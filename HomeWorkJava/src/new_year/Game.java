@@ -32,12 +32,6 @@ public class Game {
                 }
             }
         }
-
-        Utility.sortBuPoints(teams);
-
-
-
-
         return teams;
     }
 
@@ -78,7 +72,7 @@ public class Game {
                                                                           float couchTeam1,
                                                                           float couchTeam2) {
 
-        if (Handler.getListGamingStatistics().size() == 0) {
+        if (Handler.getListGamingStatistics().isEmpty()) {
             Handler.setListGamingStatistics(newStatisticMap(team1, team2, couchTeam1, couchTeam2));
 
         } else if (!Handler.getListGamingStatistics().containsKey(newMapNameTeamsPlay(team1, team2)) &&

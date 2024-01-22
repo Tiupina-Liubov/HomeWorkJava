@@ -64,7 +64,7 @@ public class Test {
         System.out.println(StreamFlatMap.flattenMap(map1));
 
         //5: Напишите метод, который принимает список списков и фильтрует все четные числа, а затем умножает их на 2.
-        List<List<Integer>> listOfLists = Generator1.generListOfLists(4, 3);
+        List<List<Integer>> listOfLists = Generator1.genListOfLists(4, 3);
         System.out.println(listOfLists);
         System.out.println(StreamFlatMap.processAndFilter(listOfLists));
 
@@ -99,9 +99,9 @@ public class Test {
         List<Double> doubles = List.of(1.2, 2.3, 3.4, 5.6, 7.8, 9.0);
         System.out.println(StreamFlatMap.combineAndTransform(integers, doubles, String::valueOf));
 
-//11: Обработка вложенных структур с условными фильтрами
-//Задание: Напишите метод, который обрабатывает вложенные структуры данных
-//(например мапы, содержащих списки), фильтрует элементы по условию и объединяет их в один список.
+        //11: Обработка вложенных структур с условными фильтрами
+        //Задание: Напишите метод, который обрабатывает вложенные структуры данных
+        //(например мапы, содержащих списки), фильтрует элементы по условию и объединяет их в один список.
         List<Order>orders= Generator1.genOrdersList(3);
         System.out.println(orders);
         System.out.println(StreamFlatMap.getItemsByCustomerName(orders, orders.get(1).getCustomerName()));

@@ -11,7 +11,7 @@ public class Generator1 {
     public static final Faker FAKER = new Faker();
     public static final Random RANDOM = new Random();
 
-    public static List<List<Integer>> generListOfLists(int quantityList, int countNumbers) {
+    public static List<List<Integer>> genListOfLists(int quantityList, int countNumbers) {
         List<List<Integer>> newList = new ArrayList<>();
         for (int j = 0; j < quantityList; j++) {
             newList.add(genListInteger(countNumbers));
@@ -29,7 +29,6 @@ public class Generator1 {
 
 
     public static List<Employee> genListEmployees(int quantityEmployee) {
-        List<Employee> employees = new ArrayList<>();
         return Stream.generate(() -> new Employee(FAKER.commerce().department(), genListLanguages(RANDOM.nextInt(6))))
                 .limit(quantityEmployee)
                 .toList();
@@ -42,7 +41,7 @@ public class Generator1 {
     }
 
     public static List<List<List<Integer>>> genList2OfList(int quantityList, int quantityListOfList, int countNumbers) {
-        return Stream.generate(() -> Generator1.generListOfLists(quantityListOfList, countNumbers))
+        return Stream.generate(() -> Generator1.genListOfLists(quantityListOfList, countNumbers))
                 .limit(quantityList)
                 .toList();
     }
@@ -96,12 +95,6 @@ public class Generator1 {
     private static List<Employee1> genListEmployees() {
         return Stream.generate(() -> new Employee1(FAKER.name().fullName(), RANDOM.nextInt(100) * 20.4))
                 .limit(RANDOM.nextInt(5))
-                .toList();
-    }
-
-    public static List<Double> genListDouble() {
-        return Stream.generate(() -> RANDOM.nextInt(11) * 10.6)
-                .limit(RANDOM.nextInt(10))
                 .toList();
     }
 
