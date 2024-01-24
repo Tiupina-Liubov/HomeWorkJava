@@ -132,7 +132,7 @@ public class Test {
         //Каждая школа содержит информацию о своих классах и студентах в этих классах.
         //Задача состоит в том, чтобы вычислить средний балл по каждому предмету среди студентов,
         //чей средний балл по всем предметам выше определённого порога (например, 8.0 из 10).
-        List<School> schools= Generator1.genListSchools(4);
+        List<School> schools= Generator1.genListSchools(3);
         System.out.println(StreamFlatMap.averageScoreBySubjectForTopStudents(schools, 5.5));
 
 

@@ -5,16 +5,10 @@ import java.util.*;
 public class Test {
     public static void main(String[] args) {
 
-        Handler.setParticipantTeams(Generator.genTeams(25, 4, Teenager.class));
-        Handler.setParticipantTeams(Generator.genTeams(25, 4, Pupil.class));
-        Handler.setParticipantTeams(Generator.genTeams(25, 4, Adult.class));
+        Handler.setParticipantTeams(Generator.genTeams(6, 4, Teenager.class));
+        Handler.setParticipantTeams(Generator.genTeams(6, 4, Pupil.class));
+        Handler.setParticipantTeams(Generator.genTeams(6, 4, Adult.class));
 
-        System.out.println(Handler.getSetAdult());
-        System.out.println(Handler.getSetTeenager());
-        System.out.println(Handler.getSetPupil());
-        System.out.println(Handler.getMapTeenager());
-        System.out.println(Handler.getMapAdult());
-        System.out.println(Handler.getMapPupil());
 
         Map<Team<Participant>, Float> map1;
         map1 = Handler.allTeamMap(Handler.getMapTeenager());
@@ -23,13 +17,13 @@ public class Test {
 
         System.out.println(Handler.getTeamMap());
 
-        Map<Team<Adult>, Float> playMapAdult = Game.resultPlayTeams(Handler.getMapAdult());
-        Map<Team<Pupil>, Float> playMapPupil = Game.resultPlayTeams(Handler.getMapPupil());
-        Map<Team<Teenager>, Float> playMapTeenager = Game.resultPlayTeams(Handler.getMapTeenager());
+        Team<Adult>winnerPlayAdult = Game.resultTournament(Handler.getMapAdult());
+        Team<Pupil>winnerPlayPupil = Game.resultTournament(Handler.getMapPupil());
+       Team<Teenager> winnerPlayTeenager = Game.resultTournament(Handler.getMapTeenager());
 
-        System.out.println(playMapAdult);
-        System.out.println(playMapPupil);
-        System.out.println(playMapTeenager);
+        System.out.println(winnerPlayAdult);
+        System.out.println(winnerPlayPupil);
+        System.out.println(winnerPlayTeenager);
 
         System.out.println(Handler.getListGamingStatistics());
 
@@ -37,11 +31,6 @@ public class Test {
             System.out.println(m);
         }
 
-        System.out.println(Utility.youngestPlayer(Handler.getTeamMap()));
-        System.out.println("   ");
-        System.out.println(Utility.experiencedTeam(Handler.getTeamMap()));
-        System.out.println(Utility.maxCouch(playMapAdult));
-        System.out.println(Utility.totalNumberPoints(playMapAdult));
         Set<String> listTeams = Utility.listOfTeams(Handler.getTeamMap());
         System.out.println(listTeams);
         System.out.println("Средний возраст участников в каждой команде:");
