@@ -14,7 +14,7 @@ public class Handler {
     private static List<Participant> allParticipants = new ArrayList<>();
     private static Map<Map<String, String>, List<Float>> listGamingStatistics = new LinkedHashMap<>();
 
-    public static Set<Team<? extends Participant>> getParticipantTeams() {
+   public static Set<Team<? extends Participant>> getParticipantTeams() {
         return participantTeams;
     }
 
@@ -80,7 +80,7 @@ public class Handler {
         return listGamingStatistics;
     }
 
-    public static void setListGamingStatistics(Map<Map<String, String>, List<Float>> listGamingStatistic) {
+    public static void setListGamingStatistics(Map< String, List<Float>> listGamingStatistic) {
         if (listGamingStatistics== null) {
             listGamingStatistics = listGamingStatistic;
         } else {

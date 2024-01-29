@@ -43,8 +43,15 @@ public class Game {
             }
         }
         Utility.sortBuPoints(teams);
+//        var floats = teams.entrySet().stream().map(Map.Entry::getValue).toList();
+//        if(floats.get(4)!=floats.get(5)){
+
         return teams;
     }
+
+//    private static <T extends Participant> Map<Team<T>, Float> c(Map<Team<T>, Float> teams){
+//
+//    }
 
     private static <T extends Participant> Team<T> play(Team<T> team1, Team<T> team2) {
         int rnd = RANDOM.nextInt(3);
@@ -82,31 +89,28 @@ public class Game {
     private static <T extends Participant> void collectionStatisticalData(Team<T> team1, Team<T> team2,
                                                                           float couchTeam1,
                                                                           float couchTeam2) {
+        String a=coupleOfTeams(team1, team2);
+        String b= coupleOfTeams(team2, team1);
 
         if (Handler.getListGamingStatistics().isEmpty()) {
             Handler.setListGamingStatistics(newStatisticMap(team1, team2, couchTeam1, couchTeam2));
 
-        } else if (!Handler.getListGamingStatistics().containsKey(newMapNameTeamsPlay(team1, team2)) &&
-                (!Handler.getListGamingStatistics().containsKey(newMapNameTeamsPlay(team2, team1)))) {
+        } else if (!Handler.getListGamingStatistics().containsKey(a) &&
+                (!Handler.getListGamingStatistics().containsKey(b))) {
 
             Handler.setListGamingStatistics(newStatisticMap(team1, team2, couchTeam1, couchTeam2));
 
         } else {
 
-            if (Handler.getListGamingStatistics().containsKey(newMapNameTeamsPlay(team1, team2))) {
-                addingResult(newMapNameTeamsPlay(team1, team2), couchTeam1);
-                addingResult(newMapNameTeamsPlay(team2, team1), couchTeam2);
+            if (Handler.getListGamingStatistics().containsKey(a)) {
+                addingResult(a, couchTeam1);
+                addingResult(b, couchTeam2);
             }
         }
     }
 
-    private static <T extends Participant> Map<Map<String, String>, List<Float>> newStatisticMap(Team<T> team1, Team<T> team2, float couchTeam1, float couchTeam2) {
-        Map<Map<String, String>, List<Float>> newStatisticMap = new HashMap<>();
-        Map<String, String> stringMap1 = new HashMap<>();
-        Map<String, String> stringMap2 = new HashMap<>();
-
-        stringMap1.put(team1.getName(), team2.getName());
-        stringMap2.put(team2.getName(), team1.getName());
+    private static <T extends Participant> Map<String,List<Float>>newStatisticMap(Team<T> team1, Team<T> team2, float couchTeam1, float couchTeam2) {
+        Map< String, List<Float>> newStatisticMap = new HashMap<>();
 
         List<Float> listTeam1 = new ArrayList<>();
         listTeam1.add(0, couchTeam1);
@@ -114,24 +118,20 @@ public class Game {
         List<Float> listTeam2 = new ArrayList<>();
         listTeam2.add(0, couchTeam2);
 
-        newStatisticMap.put(stringMap1, listTeam1);
-        newStatisticMap.put(stringMap2, listTeam2);
+        newStatisticMap.put(coupleOfTeams(team1,team2), listTeam1);
+        newStatisticMap.put(coupleOfTeams(team2,team1), listTeam2);
 
         return newStatisticMap;
     }
 
-    public static <T extends Participant> Map<String, String> newMapNameTeamsPlay(Team<T> team1, Team<T> team2) {
-        Map<String, String> stringMap1 = new HashMap<>();
-        stringMap1.put(team1.getName(), team2.getName());
-
-        return stringMap1;
+    public static <T extends Participant>  String coupleOfTeams(Team<T> team1, Team<T> team2) {
+        return team1.getName()+" - "+team2.getName();
     }
 
-    private static void addingResult(Map<String, String> nameTeams, float couch) {
+    private static void addingResult( String nameTeams, float couch) {
 
         for (Map.Entry<Map<String, String>, List<Float>> list : Handler.getListGamingStatistics().entrySet()) {
-
-            if (nameTeams.entrySet().equals(list.getKey().entrySet())) {
+            if (list.getKey().entrySet().equals(nameTeams)) {
                 addCouchOfList(list.getValue(), couch);
                 break;
             }

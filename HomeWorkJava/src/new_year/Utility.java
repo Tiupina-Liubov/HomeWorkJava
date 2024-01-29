@@ -353,4 +353,5 @@ public interface Utility {
 
         return showLongestWinningStreakMap;
     }
+
 }

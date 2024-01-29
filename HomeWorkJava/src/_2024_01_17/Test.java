@@ -134,6 +134,11 @@ public class Test {
         //чей средний балл по всем предметам выше определённого порога (например, 8.0 из 10).
         List<School> schools= Generator1.genListSchools(3);
         System.out.println(StreamFlatMap.averageScoreBySubjectForTopStudents(schools, 5.5));
+        System.out.println("++++++++");
+        Map<String, List<Student>> map=Generator1.genMapOfStudents();
+        for (Map.Entry<String,List<Student>> m:map.entrySet()){
+            System.out.println(m.getKey() +"\n"+ m.getValue());
+        }
 
 
     }

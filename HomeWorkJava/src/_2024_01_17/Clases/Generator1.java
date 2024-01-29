@@ -94,12 +94,12 @@ public class Generator1 {
 
     private static List<Employee1> genListEmployees() {
         return Stream.generate(() -> new Employee1(FAKER.name().fullName(), RANDOM.nextInt(100) * 20.4))
-                .limit(RANDOM.nextInt(5))
+                .limit(3)
                 .toList();
     }
 
     public static List<Company> genListOfCompanies(int quantityCompany) {
-        return Stream.generate(() -> new Company(FAKER.company().name(), genDepartmentsList(RANDOM.nextInt(5))))
+        return Stream.generate(() -> new Company(FAKER.company().name(), genDepartmentsList(3)))
                 .limit(quantityCompany)
                 .toList();
     }
@@ -111,8 +111,13 @@ public class Generator1 {
     }
 
     public static Map<String, List<Student>> genMapOfStudents() {
-        return Stream.generate(() -> FAKER.animal().name())
-                .limit(RANDOM.nextInt(6))
+        AtomicInteger count= new AtomicInteger(1);
+
+        return Stream.generate(()-> {
+       String str= "Class".concat(String.valueOf(count.get()));
+       count.getAndIncrement();
+           return str;})
+                .limit(4)
                 .collect(Collectors.toMap(
                         c -> c,
                         s -> genListOfStudents()
@@ -122,15 +127,19 @@ public class Generator1 {
 
     public static List<Student> genListOfStudents() {
         return Stream.generate(() -> new Student(FAKER.name().fullName(), genListSubjects()))
-                .limit(RANDOM.nextInt(6))
+                .limit(4)
                 .toList();
     }
 
     public static List<Subject> genListSubjects() {
         AtomicInteger count = new AtomicInteger(0);
 
-        return Stream.generate(() -> new Subject(Subjects.values()[count.getAndIncrement()].name(), RANDOM.nextDouble() * 12.0))
-                .limit(Subjects.values().length - 1)
-                .toList();
+        return Arrays.stream(Subjects.values()).map(
+                subject -> new Subject(subject.getValue(), RANDOM.nextDouble() * 12)
+        ).toList();
+
+        //return Stream.generate(() -> new Subject(Subjects.values()[count.getAndIncrement()].name(), RANDOM.nextDouble() * 12.0))
+                //.limit(Subjects.values().length - 1)
+                //.toList();
     }
 }
