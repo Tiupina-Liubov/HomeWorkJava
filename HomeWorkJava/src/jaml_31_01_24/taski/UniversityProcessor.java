@@ -1,4 +1,4 @@
-package src.jaml_31_01_24._2024_31_01.taski;
+package src.jaml_31_01_24.taski;
 
 import java.util.Comparator;
 import java.util.List;
@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 public class UniversityProcessor {
 
     // 1. Получить список всех курсов в университете
-    public List<Course> getAllCourses(University university) {
+    public static List<Course> getAllCourses(University university) {
         return university.getDepartments().stream()
                 .flatMap(department -> department.getCourses().stream())
                 .distinct()
@@ -18,13 +18,13 @@ public class UniversityProcessor {
     }
 
     // 2. Найти количество курсов в каждом департаменте
-    public Map<String, Long> getCoursesCountByDepartment(University university) {
+    public static Map<String, Long> getCoursesCountByDepartment(University university) {
         return university.getDepartments().stream()
                 .collect(Collectors.toMap(Department::getName, department -> (long) department.getCourses().size()));
     }
 
     // 3. Получить список названий всех курсов, которые имеют более 3 кредитов
-    public List<String> getCoursesWithMoreThanThreeCredits(University university) {
+    public static List<String> getCoursesWithMoreThanThreeCredits(University university) {
         return university.getDepartments().stream()
                 .flatMap(department -> department.getCourses().stream())
                 .filter(course -> course.getCredits() > 3)
@@ -33,7 +33,7 @@ public class UniversityProcessor {
     }
 
     // 4. Найти всех профессоров, которые ведут более одного курса
-    public Set<String> getProfessorsTeachingMultipleCourses(University university) {
+    public static Set<String> getProfessorsTeachingMultipleCourses(University university) {
         return university.getDepartments().stream()
                 .flatMap(department -> department.getCourses().stream())
                 .collect(Collectors.groupingBy(Course::getProfessor, Collectors.counting()))
@@ -44,16 +44,16 @@ public class UniversityProcessor {
     }
 
     // 5. Получить мапу курсов, где ключ - название курса, значение - список тем
-    public Map<String, List<String>> getCourseTopicsMap(University university) {
+    public static Map<String, List<String>> getCourseTopicsMap(University university) {
 
         return university.getDepartments().stream()
                 .flatMap(department -> department.getCourses().stream())
-                .collect(Collectors.toMap(course -> course.getTitle(),
-                        course -> course.getTopics()));
+                .collect(Collectors.toMap(Course::getTitle,
+                        Course::getTopics));
     }
 
     // 6. Найти департаменты, где все курсы имеют более 3 кредитов
-    public List<String> getDepartmentsWithAllCoursesMoreThanThreeCredits(University university) {
+    public static List<String> getDepartmentsWithAllCoursesMoreThanThreeCredits(University university) {
         return university.getDepartments().stream()
                 .filter(department -> department.getCourses().stream()
                         .allMatch(course -> course.getCredits()>3))
@@ -62,14 +62,14 @@ public class UniversityProcessor {
     }
 
     // 7. Получить список курсов, сгруппированных по количеству кредитов
-    public Map<Integer, List<Course>> getCoursesGroupedByCredits(University university) {
+    public static Map<Integer, List<Course>> getCoursesGroupedByCredits(University university) {
         return university.getDepartments().stream()
                 .flatMap(department -> department.getCourses().stream())
                 .collect(Collectors.groupingBy(Course::getCredits));
     }
 
     // 8. Найти департамент с самым большим количеством курсов
-    public String getDepartmentWithMostCourses(University university) {
+    public static String getDepartmentWithMostCourses(University university) {
         return university.getDepartments().stream()
                 .max(Comparator.comparingInt(department ->department.getCourses().size()))
                 .map(Department::getName)
@@ -77,12 +77,18 @@ public class UniversityProcessor {
     }
 
     // 9. Получить мапу, где ключ - название департамента, а значение - среднее количество кредитов курсов в департаменте
-    public Map<String, Double> getAverageCreditsPerDepartment(University university) {
-        return null;
+    public static Map<String, Double> getAverageCreditsPerDepartment(University university) {
+        return university.getDepartments().stream()
+                .collect(Collectors.toMap(Department::getName,
+                        department -> department.getCourses().stream()
+                                .collect(Collectors.averagingDouble(Course::getCredits))));
     }
 
     // 10. Найти курсы, у которых более 2 тем и профессор начинается на 'Dr.'
-    public List<Course> getCoursesWithMoreThanTwoTopicsAndDrProfessor(University university) {
-        return null;
+    public static List<Course> getCoursesWithMoreThanTwoTopicsAndDrProfessor(University university) {
+        return university.getDepartments().stream()
+                .flatMap(department -> department.getCourses().stream())
+                .filter(course -> course.getProfessor().startsWith("Dr.")&& course.getTopics().size()>2)
+                .toList();
     }
 }

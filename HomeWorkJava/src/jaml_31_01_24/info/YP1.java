@@ -1,4 +1,4 @@
-package src.jaml_31_01_24._2024_31_01;//package org.example._2024_31_01;
+package src.jaml_31_01_24.info;//package org.example._2024_31_01;
 //
 //import org.yaml.snakeyaml.Yaml;
 //

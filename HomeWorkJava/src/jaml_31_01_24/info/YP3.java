@@ -1,8 +1,8 @@
-package src.jaml_31_01_24._2024_31_01;
+package src.jaml_31_01_24.info;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
-import src.jaml_31_01_24._2024_31_01.taski.UniversityContainer;
+import src.jaml_31_01_24.taski.UniversityContainer;
 
 import java.io.FileReader;
 import java.io.IOException;

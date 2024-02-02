@@ -1,4 +1,4 @@
-package src.jaml_31_01_24._2024_31_01.taski;
+package src.jaml_31_01_24.taski;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
