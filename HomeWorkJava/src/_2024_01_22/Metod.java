@@ -71,17 +71,20 @@ public class Metod {
             throw new RuntimeException(e);
         }
 
-        //Отсортируйте стримы по рейтингу от наибольшего к наименьшему и запишите результаты в новый файл.
+        //Отсортируйте стримы по рейтингу от наибольшего к наименьшему и запишите результаты в новый файл.//todo peredelat
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader("f.txt"));
              BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("result_Task_4.txt"))) {
 
-            List<String> strings = bufferedReader.lines()
-                    .sorted(Comparator.comparing((s) -> s.split(", ")[1]))
-                    .toList();
-
-            bufferedWriter.write(String.valueOf(strings.stream()
-                    .map((s) -> "\n" + s)
-                    .toList()));
+            bufferedReader.lines()
+                    .sorted(Comparator.comparing((s) -> Double.parseDouble(s.split(", ")[1])))
+                    .forEach(line -> {
+                        try {
+                            bufferedWriter.write(line);
+                            bufferedWriter.newLine();
+                        } catch (IOException e) {
+                            throw new UncheckedIOException(e);
+                        }
+                    });
 
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -131,7 +134,7 @@ public class Metod {
              BufferedWriter writer = new BufferedWriter(new FileWriter("result_Task_8.txt"))) {
 
             writer.write(String.valueOf(reader.lines()
-                    .filter(str -> parseDouble(str.split(", ")[1]) > 4.7)
+                    .filter(str -> parseDouble(str.split(", ")[1]) < 4.7)
                     .map(str -> "\n" + str.split(", ")[0] + "- Low Rated")
                     .toList()));
 

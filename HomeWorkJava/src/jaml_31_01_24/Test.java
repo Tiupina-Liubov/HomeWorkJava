@@ -32,7 +32,7 @@ public class Test {
         System.out.println("3. Получить список названий всех курсов, которые имеют более 3 кредитов");
         System.out.println(UniversityProcessor.getCoursesWithMoreThanThreeCredits(universityContainer.getUniversity())+"\n");
 
-        System.out.println(" Найти всех профессоров, которые ведут более одного курса");
+        System.out.println("4 Найти всех профессоров, которые ведут более одного курса");
         System.out.println(UniversityProcessor.getProfessorsTeachingMultipleCourses(universityContainer.getUniversity())+"\n");
 
         System.out.println("5. Получить мапу курсов, где ключ - название курса, значение - список тем");

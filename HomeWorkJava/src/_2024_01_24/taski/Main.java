@@ -2,6 +2,9 @@ package src._2024_01_24.taski;
 
 import java.io.*;
 import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -51,9 +54,14 @@ class Main1 {
 
         try(ObjectInputStream inputStream =new ObjectInputStream(new FileInputStream("books.ser"));
         ObjectOutputStream objectOutputStream=new ObjectOutputStream(new FileOutputStream("filterByDate.ser"))){
-            
 
-        } catch (IOException e) {
+            List<Book> books= (List<Book>) inputStream.readObject();
+
+            objectOutputStream.writeObject(books.stream()
+                    .filter(book -> book.getYear()>(1900))
+                    .toList());
+
+        } catch (IOException | ClassNotFoundException e) {
             throw new RuntimeException(e);
         }
     }
@@ -65,23 +73,38 @@ class Main2 {
      * Отфильтруйте книги с ценой выше определенной суммы. Сериализуйте отфильтрованный список книг в файл.
      */
     public static void main(String[] args) {
+        try (ObjectInputStream inputStream= new ObjectInputStream(new FileInputStream("books.ser"));
+        ObjectOutputStream oos= new ObjectOutputStream(new FileOutputStream("filterByPrise.ser"))){
 
+            List<Book> books= (List<Book>) inputStream.readObject();
+
+            oos.writeObject(books.stream()
+                    .filter(book -> book.getPrice()>350.0f)
+                    .toList());
+
+        } catch (IOException | ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
 
 class Main3 {
 
     /**
-     Агрегируйте данные, например, подсчитайте среднюю цену книг по каждому автору. Сериализуйте результаты в файл.
+     * Агрегируйте данные, например, подсчитайте среднюю цену книг по каждому автору. Сериализуйте результаты в файл.
      */
     public static void main(String[] args) {
-//        try (FileInputStream fis = new FileInputStream("data.txt");
-//             Scanner scanner = new Scanner(fis);
-//             ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("authorAveragePrice.ser"))) {
-//
-//            Map<String, Double> authorAveragePrice = scanner.useDelimiter("\\A").next().lines()
-//                    .skip(1)
-//                    .map(line -> line.split(", "))
-//
+        try (FileInputStream fis = new FileInputStream("taski.txt");
+             Scanner scanner = new Scanner(fis);
+             ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("authorAveragePrice.ser"))) {
+            Map<String, Double> authorAveragePrice = scanner.useDelimiter("\\A").next().lines()
+                    .skip(1)
+                    .map(line -> line.split(", "))
+                    .collect(Collectors.groupingBy(fields -> fields[2], Collectors.averagingDouble(fields -> Double.parseDouble(fields[4]))));
+
+            oos.writeObject(authorAveragePrice);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
