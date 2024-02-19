@@ -12,7 +12,7 @@ public class Test {
     public static void main(String[] args) {
 
 
-        UniversityContainer universityContainer=null;
+        UniversityContainer universityContainer;
 
         try {
             ObjectMapper objectMapper = new ObjectMapper(new YAMLFactory());

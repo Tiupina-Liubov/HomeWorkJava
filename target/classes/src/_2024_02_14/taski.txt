@@ -18,8 +18,8 @@ fullTime (типа boolean) - статус обучения студента (о
 который будет содержать Map<Integer, Student>, где ключ - это id студента.
 Реализуйте в этом классе следующие методы для обработки данных с использованием Stream API:
 
-addStudent(Student student) - добавляет студента в реестр.
-removeStudent(int id) - удаляет студента по идентификатору.
++addStudent(Student student) - добавляет студента в реестр.
++removeStudent(int id) - удаляет студента по идентификатору.
 findStudentsByMajor(String major) - возвращает список студентов, обучающихся на указанной специальности.
 calculateAverageGrade() - вычисляет средний балл среди всех студентов.
 listStudentsByYear(int year) - возвращает список студентов, обучающихся на указанном курсе.
