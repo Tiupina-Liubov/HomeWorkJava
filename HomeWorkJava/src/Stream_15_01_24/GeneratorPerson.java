@@ -1,7 +1,6 @@
 package src.Stream_15_01_24;
 
 import com.github.javafaker.Faker;
-import src._2024_01_10.Stream;
 
 import java.util.ArrayList;
 import java.util.List;
