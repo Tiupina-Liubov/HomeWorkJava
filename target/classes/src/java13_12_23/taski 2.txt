@@ -1,0 +1,22 @@
+- Доделать Stack
+- Реализовать QUEUE
+- Реализуйте функцию, которая использует Stack<String> для реверса строки.
+  public static String reverse(String str)
+- Печать элементов Queue в обратном порядке
+  public static void printInReverse(Queue<String> queue)
+- Реализуйте функцию, которая осуществляет циклический сдвиг элементов в Queue<String>.
+  public static void rotate(Queue<String> queue, int k) {
+- Создайте Map<String, String>, добавьте в него несколько пар ключ-значение,
+  затем найдите определенный ключ и замените его значение.
+  Map<String, String> map = new HashMap<>();
+         map.put("A", "C");
+         map.put("B", "D");
+- Инвертируйте Map<String, String>, чтобы ключи стали значениями, а значения ключами.
+  public static Map<String, String> invert(Map<String, String> map)
+
+
+- Написать функцию, которая выполняет факторизацию(погуглить) числа и возвращает
+  ее в виде Map, где ключ - это простой множитель, а значение - степень этого множителя.
+  public Map<Integer, Integer> primeFactorization(int number)
+- Написать функцию, которая проверяет, являются ли две строки анаграммами друг друга.
+  public boolean areAnagrams(String str1, String str2)

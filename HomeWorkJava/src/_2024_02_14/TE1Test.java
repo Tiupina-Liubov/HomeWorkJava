@@ -3,7 +3,7 @@ package src._2024_02_14;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class git pullTE1Test {
+class TE1Test {
 
     private static final TE1 TE_1 = new TE1();
     private static int NUM_100 = 100;
