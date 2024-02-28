@@ -44,7 +44,6 @@ public class ComplexOperationsService {
     }
 
 
-
     /**
      * - понять что делает метод
      * - понять какие у него поведения
@@ -150,19 +149,19 @@ public class ComplexOperationsService {
     }
 
     public boolean validateIdentificationNumber(String id) {
-        if(id!=null) {
+        if (id != null) {
             // ID должен быть в формате: две буквы, за которыми следуют 6 цифр (например, AB123456)
             if (!id.matches("^[A-Za-z]{2}\\d{6}$")) {
                 throw new IllegalArgumentException("Identification number format is invalid.");
-            }else{
+            } else {
                 return true;
             }
-        }else{
+        } else {
             throw new NullPointerException("ID can not be null");
         }
     }
 
-    public  boolean checkSumOfListAgainstThreshold(List<Integer> numbers, int threshold) {
+    public boolean checkSumOfListAgainstThreshold(List<Integer> numbers, int threshold) {
         if (numbers == null) {
             throw new NullPointerException("The list of numbers is null.");
         }
@@ -179,26 +178,30 @@ public class ComplexOperationsService {
     }
 
     public boolean validateIPAddress(String ipAddress) {
-        if(ipAddress==null){
+        if (ipAddress == null) {
             throw new NullPointerException("IP address can not be null");
         }
         // IP адрес должен соответствовать формату IPv4
         if (!ipAddress.matches("^([0-9]{1,3}\\.){3}[0-9]{1,3}$")) {
             throw new IllegalArgumentException("IP address format is invalid.");
-        }else {
+        } else {
             return true;
         }
     }
-    
+
 
     public boolean ensureNoDuplicateEntries(List<String> entries) {
-        List<String>listNotNull= entries.stream()
-                .filter(Objects::nonNull)
-                .toList();
-        if(entries.isEmpty()||listNotNull.isEmpty()){
-            throw new NullPointerException("The list of numbers is null.");
+        if (entries != null) {
+            List<String> listNotNull = entries.stream()
+                    .filter(Objects::nonNull)
+                    .toList();
+            if (entries.isEmpty() || listNotNull.isEmpty()) {
+                throw new NullPointerException("The list of numbers is null.");
+            }
+            long uniqueCount = listNotNull.stream().distinct().count();
+            return uniqueCount >= listNotNull.size();
+        } else {
+            throw new CollectionEmptyException(ErrorMassager.COLLECTION_IS_EMPTY);
         }
-        long uniqueCount = listNotNull.stream().distinct().count();
-        return uniqueCount >= listNotNull.size();
     }
 }
