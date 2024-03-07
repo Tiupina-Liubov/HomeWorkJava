@@ -8,17 +8,19 @@ public class WN {
         Producer producer = new Producer(storage);
         Consumer consumer = new Consumer(storage);
         Reservation reservation = new Reservation(storage);
+        Basket basket= new Basket(storage);
 
         Thread prodThread = new Thread(producer);
         Thread consThread = new Thread(consumer);
-        Thread reserThred = new Thread(reservation);
+        Thread resetThread = new Thread(reservation);
+        Thread basketThread= new Thread(basket);
 
         prodThread.start();
-        reserThred.start();
+        resetThread.start();
         consThread.start();
+        basketThread.start();
     }
 }
-
 
 class Storage {
     private int item = 0;
@@ -27,20 +29,20 @@ class Storage {
     private final Object lock = new Object();
 
     public void getItem() {
-//        synchronized (lock) {
-//
-//            while (reservedCount < 1) {
-//                try {
-//                        lock.wait();
-//                } catch (InterruptedException e) {
-//                    throw new RuntimeException(e);
-//                }
-//            }
-//
-//           reservedCount--;
-//            System.out.println("Customer has bought one item. Quantity: " + reservedCount);
-//            lock.notifyAll();
-//        }
+        synchronized (lock) {
+
+            while (reservedCount < 1) {
+                try {
+                        lock.wait();
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+           reservedCount--;
+            System.out.println("Customer has bought one item. Quantity: " + reservedCount);
+            lock.notifyAll();
+        }
     }
 
     public void putItem() {
@@ -60,7 +62,7 @@ class Storage {
 
     public void reserved() {
         synchronized (lock) {
-            while (reservedCount >= 5 || item<1) {
+            while (reservedCount >= 5 || item<1 ||quantityInBasket<1) {
                 try {
                     lock.wait();
                 } catch (InterruptedException e) {
@@ -76,14 +78,15 @@ class Storage {
 
     public void goToBasket() {
         synchronized (lock) {
-            while () {
+            while (item >= 5 || reservedCount>=5|| quantityInBasket>=5) {
                 try {
                     lock.wait();
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
             }
-
+            reservedCount--;
+            quantityInBasket++;
             System.out.println("Number of items in basket" + quantityInBasket);
             lock.notifyAll();
         }

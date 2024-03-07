@@ -4,7 +4,6 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-
 public class Stream {
     public static List<String> filterByLength(List<String> input, int length) {
         return input.stream()
