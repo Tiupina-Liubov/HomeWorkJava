@@ -6,13 +6,13 @@ import lombok.Setter;
 
 import java.util.*;
 import java.util.concurrent.Exchanger;
-import java.util.stream.Collectors;
+import java.util.stream.DoubleStream;
 import java.util.stream.Stream;
 
 public class EXCH {
     private static final Exchanger<Action> EXCHANGER = new Exchanger<>();
 
-    private static final Exchanger<Player> EXCHANGERPLAYER = new Exchanger<>();
+    private static final Exchanger<List<Player>> EXCHANGERPLAYER = new Exchanger<>();
 
     private static final Exchanger<Team> EXCHANGERTEAM = new Exchanger<>();
 
@@ -102,8 +102,6 @@ class Player extends Thread {
                 p1 == Action.SCISSORS && p2 == Action.SCISSORS ||
                 p1 == Action.STONE && p2 == Action.STONE) {
             points += 0.5;
-
-
         }
     }
 
@@ -129,53 +127,74 @@ class Player extends Thread {
     }
 }
 
-
 class Team extends Thread {
-    public String name;
-    public Exchanger<Player> exchanger;
-    public List<Player> players;
-    @Getter
-    private double points = 0.0d;
 
-    public Team(String name, Exchanger<Player> exchanger, List<Player> players) {
+    public String name;
+
+    public Exchanger<List<Player>> exchanger;
+
+    public List<Player> players;
+
+    @Getter
+    private double point = 0.0d;
+    @Getter
+    private double count = 0.0;
+
+
+    public Team(String name, Exchanger<List<Player>> exchanger, List<Player> players) {
         this.name = name;
         this.exchanger = exchanger;
         this.players = players;
     }
 
+    //
 
-    private void playGames(Player opponent) throws InterruptedException {
-        synchronized (this) {
-            for (Player player : players) {
-                Thread newPlayerThread = new Thread(player); // Создаем новый поток игрока
-                newPlayerThread.start();
-                newPlayerThread.join();
+    private void playGames(List<Player> otherTeamPlayers) {
+        for (Player player : players) {
+            for (Player opponent : otherTeamPlayers) {
+                Thread playerThread = new Thread(player);
+                Thread opponentThread = new Thread(opponent);
+                playerThread.start();
+                opponentThread.start();
+                try {
+                    playerThread.join();
+                    opponentThread.join();
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
             }
         }
     }
 
+    private void setPoint() {
+        point += players.stream()
+                .flatMapToDouble(player -> DoubleStream.of(player.getPoints()))
+                .sum();
+    }
+
+    public void setCount(double count) {
+        this.count += count;
+    }
 
     @Override
-    public void run() {
+        public void run() {
+        List<Player> opponentTeams;
         try {
-            Player opponent;
-            for (Player player : players) {
-                opponent = exchanger.exchange(player);
-                playGames(opponent);
-                System.out.println(player);
-                System.out.println(opponent);
-            }
+            opponentTeams = exchanger.exchange(null);
         } catch (InterruptedException e) {
-            Thread.currentThread().interrupt();
+            throw new RuntimeException(e);
         }
-    }
+            playGames(opponentTeams);
 
+        setPoint();
+        }
 
     @Override
     public String toString() {
         return "Team{" +
                 "name='" + name + '\'' +
-                ", points=" + points +
+                ", players=" + players +
+                ", point=" + point +
                 '}';
     }
 }
@@ -189,32 +208,40 @@ class Match extends Thread {
     private Team loser;
 
     public Match(Team team1, Team team2) {
-        this.team1 = team1;
-        this.team2 = team2;
+            this.team1 = team1;
+            this.team2 = team2;
+        try {
+            team1.join();
+            team2.join();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+
     }
 
     @Override
     public void run() {
-        if (team1.getPoints() > team2.getPoints()) {
+
+        if (team1.getPoint() > team2.getPoint()) {
             winner = team1;
             loser = team2;
+            team1.setCount(1.0);
         } else {
             winner = team2;
+            team2.setCount(1.0);
             loser = team1;
         }
     }
 }
 
 class Tourney extends Thread {
-
     public String name;
     public List<Team> teams;
-    private Exchanger<Team> teamExchanger;
 
     public Tourney(String name, List<Team> teams, Exchanger<Team> teamExchanger) {
         this.name = name;
         this.teams = teams;
-        this.teamExchanger = teamExchanger;
         this.start();
     }
 
@@ -224,11 +251,10 @@ class Tourney extends Thread {
                 Match match = new Match(team, opponentTeam);
                 match.start();
                 match.join();
-                System.out.println(match.getWinner() + " - " + match.getLoser());
+                System.out.println(" Winner : " + match.getWinner() + " - Loser : " + match.getLoser());
             }
         }
     }
-
 
     @Override
     public void run() {
@@ -240,7 +266,6 @@ class Tourney extends Thread {
             }
         }
     }
-
 
 
     @Override
